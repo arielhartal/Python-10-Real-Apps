@@ -1,0 +1,13 @@
+; Hanoi.ocx
+
+[Add.Code]
+Hanoi.ocx=Hanoi.ocx
+
+[Hanoi.ocx]
+file-win32-x86=thiscab
+clsid={57DF7E8D-6C82-11D4-BCBF-00104B9E7443} 
+DestDir=11
+FileVersion=1,0,0,1 
+RegisterServer=yes  
+; end of INF file
+

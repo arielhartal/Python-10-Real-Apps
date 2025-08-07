@@ -1,0 +1,219 @@
+#VRML V2.0 utf8
+
+Group {
+    children	[
+ 		Viewpoint {
+			position 10.0 2.0 16.0
+			orientation 1 0 0 .15
+			description "Entry"
+		},
+		NavigationInfo {
+			type             "WALK" 
+			avatarSize .01
+			visibilityLimit 50.0
+			speed .3
+		},
+		Sound {
+		source DEF ClaySound AudioClip {
+			loop TRUE
+			url ["ballade.mid"]
+			startTime 0
+			} 
+		},
+	 DEF Obj0 Transform {
+   			translation   16.9375 0  -19.0625,
+			children		Shape {
+	    geometry		    IndexedFaceSet {
+		coord			Coordinate {
+		 point
+       [
+         -10.9375    0.0000  -10.9375,
+         -10.9375    0.0000   11.0625,
+         -10.9375    0.2969   11.0625,
+         -10.9375    0.2969  -10.9375,
+          11.0625    0.0000  -10.9375,
+          11.0625    0.2969  -10.9375,
+          11.0625    0.0000   11.0625,
+          11.0625    0.2969   11.0625,
+         -11.0625    0.2969   11.0625,
+         -11.0625    0.2969  -10.9375,
+         -11.0625    0.2969  -11.0625,
+         -10.8125    0.2969  -11.0625,
+         -10.8125    0.2969  -10.9375,
+          11.0625    0.2969  -11.0625,
+         -10.8125    3.5000  -10.8125,
+          11.0625    3.5000  -10.8125,
+          11.0625    3.5000  -11.0625,
+         -10.8125    3.5000  -11.0625,
+          11.0625    0.2969  -10.8125,
+         -11.0625    3.5000  -11.0625,
+         -10.8125    0.2969  -10.8125,
+         -11.0625    3.5000   11.0625,
+         -10.8125    3.5000   11.0625,
+         -10.8125    0.2969   11.0625,
+       ]
+      }
+#	ImageTexture {
+#		url [vrml5.gif]
+#		repestS TRUE
+#		repeatT TRUE
+#		}
+	  color                           Color {
+		 color
+       [
+         0.375000  0.046875  0.031250,
+         0.406250  0.437500  0.421875,
+         0.312500  0.375000  0.187500,
+         0.656250  0.750000  0.578125,
+         0.781250  0.578125  0.484375,
+         0.375000  0.484375  0.640625,
+         0.062500  0.421875  0.062500,
+         0.062500  0.421875  0.062500,
+         0.062500  0.421875  0.062500,
+         0.000000  0.000000  0.500000,
+         0.000000  0.500000  0.500000,
+         0.000000  0.500000  0.500000,
+         0.000000  0.500000  0.500000,
+         0.000000  0.000000  0.500000,
+         0.500000  0.000000  0.500000,
+         0.500000  0.000000  0.500000,
+         0.359375  0.296875  0.031250,
+       ]
+      }
+	    coordIndex
+      [
+         0,   1,   2,   3, -1,
+         4,   0,   3,   5, -1,
+         6,   4,   5,   7, -1,
+         1,   6,   7,   2, -1,
+         2,   7,   5,   3, -1,
+         1,   0,   4,   6, -1,
+         8,   9,   3,   2, -1,
+         9,  10,  11,  12, -1,
+        12,  11,  13,   5, -1,
+        14,  15,  16,  17, -1,
+        18,  13,  16,  15, -1,
+        13,  10,  19,  16, -1,
+        20,  18,  15,  14, -1,
+        21,  22,  17,  19, -1,
+        10,   8,  21,  19, -1,
+        23,  20,  14,  22, -1,
+         8,  23,  22,  21, -1,
+      ]
+      colorPerVertex FALSE
+      colorIndex
+      [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+         10,
+         11,
+         12,
+         13,
+         14,
+         15,
+         16,
+      ]
+     }
+    }
+  }
+		DEF XForm Transform { 
+				translation 17 4 -20 
+				children [
+                                Shape {	
+				 appearance Appearance {
+               			 material Material { 
+             		         diffuseColor 1 0 0 
+              				  }
+          			  }
+		    	       geometry Box {} },
+
+                                DEF Clicker TouchSensor {}
+                                DEF TimeSource TimeSensor { cycleInterval 3.0 loop TRUE }
+                                DEF Animation OrientationInterpolator {
+                                        key     [0,     .33,    .66,    1.0]
+                                        keyValue[0 1 0 0, 0 1 0 2.1, 0 1 0 4.2, 0 1 0 0]
+                                        }
+				DEF AnimPos PositionInterpolator {
+					key	[0 .5 1 ]
+					keyValue[17 4 -20, 17 1 -20 ,17 4 -20]
+				}
+                                  ]
+					 }
+
+			DEF XForm1 Transform {
+				translation 20 6 -20
+				children [
+                                Shape {	
+				               appearance Appearance {
+               		               material Material { 
+             		               diffuseColor 0 1 0 
+              				                     }
+          			                                     }
+		    	           geometry Cylinder {
+						 bottom  TRUE
+     						 height  2
+     						 radius  1
+      					 side    TRUE
+     						 top     TRUE
+								} }
+		
+                                DEF TimeSource1 TimeSensor { cycleInterval 3.0 
+							      startTime 0
+							      loop TRUE
+							      stopTime -1 }
+                                DEF Animation1 
+					PositionInterpolator {
+                                        key     [0,     .33,   .66,     1.0]
+                                        keyValue[10 2 -16 , 18 4 -10 ,14 6 -16 10 2 -16 ]
+                                        }
+			]
+				 }
+				
+DEF THEO Transform {
+                    translation 12 2 -10
+        	    children [
+			      Shape { 
+				 geometry Sphere {radius 1.5}
+				 appearance Appearance {material Material {diffuseColor 1 1 0} }
+			      }
+                    
+ 		              DEF THEOTIME TimeSensor { cycleInterval 3 
+							loop TRUE 
+							enabled TRUE 
+							startTime 0
+							stopTime -3}
+		              DEF P  PositionInterpolator { 
+		 			key [0, .5 ,1]
+					keyValue [12 2 -10, 15 3 -7, 13 1 -12]
+		    }
+		    ]
+}
+				 ]
+                                  ROUTE Clicker.touchTime TO TimeSource.startTime
+                                  ROUTE TimeSource.fraction_changed TO Animation.set_fraction
+                                  ROUTE Animation.value_changed TO XForm.rotation
+				  ROUTE TimeSource.fraction_changed TO AnimPos.set_fraction
+				  ROUTE AnimPos.value_changed TO XForm.translation
+
+		#		  ROUTE Clicker1.touchTime TO TimeSource1.startTime
+                                  ROUTE TimeSource1.fraction_changed TO Animation1.set_fraction
+                                  ROUTE Animation1.value_changed TO XForm1.translation	
+		#		  ROUTE Clicker2.touchTime TO TimeSource2.startTime
+                #               ROUTE TimeSource2.fraction_changed TO Animation2.set_fraction
+                #               ROUTE Animation2.value_changed TO Alekos.translation
+
+		ROUTE THEOTIME.fraction_changed TO P.set_fraction
+		ROUTE P.value_changed TO THEO.set_translation
+					
+				}
+
+
+

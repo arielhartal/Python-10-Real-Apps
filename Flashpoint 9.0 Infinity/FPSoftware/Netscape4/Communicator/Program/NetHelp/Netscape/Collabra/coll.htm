@@ -1,0 +1,884 @@
+<HTML>
+<HEAD>
+<TITLE>Netscape Security</TITLE>
+<SCRIPT SRC = "../../Topic.js"  LANGUAGE = "JavaScript1.2"></SCRIPT>
+<LINK REL=STYLESHEET TYPE="text/css" HREF="../shared/NetHelp1.css">
+</HEAD>
+<BODY>
+
+<H1><A NAME="getting_started_security"  TOCSTRING="Getting Started with Security"></A></H1>
+
+<H2><A NAME="starting_security" INDEXSTRING="security^encryption^digital signatures"
+TOCSTRING="About Security">About Security</A></H2>
+
+<H3><I>Learn how to make it more difficult for unauthorized persons to access your system and
+correspondence.</I></H3>
+
+<P>To make it more difficult for unauthorized persons to interfere with your day-to-day
+communications or access your system, follow these steps:</P>
+<OL>
+<LI>Familiarize yourself with the basic concepts and terms concerning electronic security.</LI>
+<BR>
+<LI>Know how to choose a good password and require a password for any Navigator task
+that accesses your certificates.</LI>
+<BR>
+<LI>Obtain a certificate for yourself.</LI>
+<BR>
+<LI>Use the Security Info window to set Navigator preferences for browsing encrypted web pages.</LI>
+<BR>
+<LI>Use the Security Info window to set Java/JavaScript access preferences. The Security Info
+window's Java/JavaScript preferences include defaults for choosing levels of access you are willing to grant to Java applets and JavaScript scripts, which web sites can run on your computer.</LI>
+<BR>
+<LI>Collect certificates from all those with whom you wish to have encrypted correspondence.</LI>
+</OL>
+<P>Click one of the following topics to learn more about: 
+<BR>
+<A HREF="nethelp:netscape/collabra:concepts">Concepts and Terms Concerning Encryption, Digital Signatures, and
+More</A><BR>
+<HR>
+<H2><A NAME="concepts" TOCSTRING="Concepts and Terms">About Security Terms and
+Concepts</A></H2>
+<P>This section describes terms and concepts you must know in order to make your system and
+correspondence more secure.</P>
+
+<H3><A NAME="about_security">About Electronic Security</A></H3>
+<P>Electronic security requires that</P>
+<UL>
+<LI>No unauthorized person can access data transmitted to or from you.</LI>
+<BR>
+<LI>No unauthorized person can, without detection, forge your identity or the identity of anyone
+whose certificate you hold.</LI>
+<BR>
+<LI>No unauthorized Java applet can access your computer, and authorized Java applets can
+only access your computer to an extent to which you approve.</LI>
+</UL>
+<P>While you cannot always ensure your communications are secure, you can use certificates,
+encryption, and the Security Info window to make it less likely you or others compromise
+security.</P>
+<HR>
+<H3><A NAME="about_certs">About Certificates and Digital Signatures</A></H3>
+<P>A <B>certificate</B> is a tamper-resistant file that identifies the individual or organization to whom it is issued and provides you with tools so you can better secure communications with others.
+Navigator uses certificates to encrypt information. You can use a certificate to check the identity of the certificate's owner. You should trust a certificate only if you trust the person or organization that issued it.
+</P>
+<P>A certificate's contents depend on what level of certificate it is. A basic certificate contains:</P>
+<UL>
+<LI>the name the owner gave the signing authority</LI>
+<BR> 
+<LI>a digital signature unique to the owner</LI>
+<BR> 
+<LI>a public key to match the owner's private key</LI>
+<BR> 
+<LI>a signature from the signing authority that issued the certificate</LI>
+</UL>
+<P>You collect and distribute certificates when you send and receive signed messages.</P>
+<H3><A NAME="about_encryption">About Encryption</A></H3>
+<P>
+Encryption is scrambling information through the use of a public key, which is included in a
+certificate you collect from a correspondent.</P>
+<P>
+When you encrypt an outgoing message, you use your recipient's public key to scramble the
+message in such a way that only your intended recipients can unscramble the message.
+Specifically, a recipient's certificate contains a <I>public key</I>.</P>
+<P>
+A correspondent uses your certificate in the same way when encrypting messages to you.
+You cannot read an encrypted message or display an encrypted web page without decrypting
+it.</P>
+<P>
+To encrypt a message, you must have a valid certificate from each and every recipient in the
+message's address list. You cannot encrypt the message for only selected recipients.</P>
+<HR>
+<H3><A NAME="about_decryption">About Decryption</A></H3>
+<P>Decryption is unscrambling encrypted information transmitted to you.</P>
+<P>When you open an encrypted message or connect to an encrypted web page, you use your
+private key to decrypt and display the message or web page contents.</P>
+<P>You cannot read an encrypted message or display an encrypted web page without decrypting
+it. 
+<BR>
+You cannot decrypt messages or web pages:</P> <UL>
+<LI>encrypted with a certificate other than the one matching the one you own</LI>
+<BR>
+<LI>on computers other than the one you used to obtain your certificate (unless you export your
+certificate from your original computer and import it into the computer you are currently
+using)</LI>
+<BR>
+<LI>after the expiration date shown on your certificate</LI>
+</UL>
+<P>
+Keep your certificates and computer safe. Anyone accessing your certificates or key database
+on your computer can decrypt your messages and sign outgoing messages.</P>
+<HR>
+<H3><A NAME="about_keys">About Public and Private Keys</A></H3>
+<P>When you obtain your certificate for a signing authority, you generate public and private
+keys:</P> <UL> 
+<LI>A <B>private key</B> is a decryption code Navigator generates when
+you obtain a certificate from a certificate issuer (signing authority). Navigator stores your
+private key in your key database and uses it to decrypt information encrypted with your public key. </LI>
+<BR>
+ <LI>A <B>public key</B> is an encryption code Navigator generates and stores
+in your key database and includes it with your digital signature when you sign an outgoing
+message or some other object you can sign and send. Whoever receives and stores your public
+key can encrypt and send information to you.</LI>
+</UL>
+<HR>
+<H3><A NAME="about_signers">About Certificate Signers</A></H3>
+<P>
+Certificate signers are the companies or organizations that issue and authorize certificates.
+You can use the Security Info window to contact signers of certificates you hold. You can contact
+signers when you need to obtain a certificate for yourself, update certificates, and validate
+certificates.</P>
+<P>
+Use the <B>Signers</B>, Certificate panel to view a list of certificate issuers you can
+contact.</P>
+<HR>
+<H3><A NAME="about_encrypted_pages">About Encrypted Web Pages</A></H3>
+<P>
+A server can encrypt a web page when transmitting the page data to your browser. Your
+browser decrypts the message just before displaying it for you. After you receive, decrypt, and
+view the page, it resides on your computer in its unencrypted form.</P>
+<P>
+On the Security window, use the: </P>
+<P>
+<B>Security Info</B> panel to display information about an encrypted web page you
+are connecting to.</P>
+<P><B>Navigator</B> panel to configure your defaults for accessing encrypted web
+pages.</P>
+<P><B>Web Sites</B> panel to display information about certificates you
+have already accepted from Web sites.</P>
+<HR>
+<H3><A NAME="about_encrypted_messages">About Encrypted Messages</A></H3>
+
+<P> Encrypted messages you receive are stored in their encrypted state. You decrypt
+messages only when you open them.</P>
+ <P>Follow these rules to avoid interruptions in accessing your messages:</P>
+<UL>
+ <LI>Ensure you own a valid certificate.</LI>
+<BR>
+<LI>Ensure recipients have your updated certificate.</LI>
+<BR>
+<LI>Do not move your certificate from the computer used to obtain your certificate, unless you
+export your certificate to other computers you use and import the certificate from each of those
+computers.</LI>
+<BR>
+<LI>Do not forget your password.</LI>
+<BR>
+<LI>Be prompt in updating expired certificates.</LI>
+</UL>
+<HR>
+
+<H3><A NAME="about_applets">About Signed Java Applets</A></H3>
+<P>Some web pages make available a special type of program called a Java applet. You may
+need to use a Java applet in order to make use of an online service. Java applets, like email
+messages and web pages, can carry and deliver a certificate, which can help you in deciding
+whether you want to use an applet and give it access to your computer.</P>
+<P>Use the <B>Java applets</B>  panel to set levels of access you are willing to grant Java
+applets.</P>  <P>Use the <B>Software Developers</B> Certificates panel to display certificates
+you have already collected from Java applets.</P>
+<P>Use the <B>Security Info</B> panel to display information about an applet when it requests
+access to your computer.</P>
+
+<HR>
+
+<H1><A NAME="sec_info_pane" TOCSTRING="Security Status" ></A></H1>
+
+<H2><A NAME="sec_info_intro" TOCSTRING="Introduction" INDEXSTRING="security
+status">Introduction to Security Info</A></H2>
+<P>Check the security status of your current task by using the Security Info window:</P>
+<OL TYPE="1">
+<LI>On the Navigator toolbar, click <B> Security</B> to open the Security Info window.</LI>
+<BR>
+<LI>In the left frame of the Security Info window, click <B> Security Info</B>. The right frame of
+the Security Info window displays information about your most recent task.</LI>
+</OL>
+
+<HR>
+
+<H2><A NAME="HELP_SEC_INFO" TOCSTRING="General Status"
+INDEXSTRING="status^security">General Status Information (No Active Status)</A></H2>
+
+<P>The <B>Security Info</B>  panel displays the status of a certificate-based task that is
+currently in progress. Certificate-based tasks are:</P>
+<UL>
+<LI>loading an encrypted web page</LI>
+<BR>
+<LI>accessing a Java applet that requests access to your computer</LI>
+</UL>
+<P>Some Security Information panel messages require you to make a decision and provide input,
+while other panel messages report the success or failure of a task.</P>
+
+<HR>
+
+<H2><A NAME="HELP_SEC_INFO_INCOMING" TOCSTRING="Incoming Message"
+INDEXSTRING="security">Your Current Incoming Message</A></H2>
+
+<H3>You cannot decrypt a message</H3>
+<P>You cannot decrypt messages on any computer but the one to which your certificates were
+issued, unless you export your certificates. If you are using a computer other than the one you used when you obtained your
+certificates, you must import the certificates you've exported from the original computer.</P>
+
+<P>Update your personal certificate. If you are using the original computer on which your expired
+certificate was issued, after contacting the certificate issuer, you can regenerate a valid private
+key and can then decrypt your current messages.</P>
+
+<HR>
+
+<H2><A NAME="HELP_SEC_INFO_WEB_PAGE" TOCSTRING="Web Page"
+INDEXSTRING="security">The Encrypted Web Page You Are Loading</A></H2>
+
+<H3>Warning about unencrypted files in your disk cache</H3>
+
+<P>Warning: Once the browser displays an encrypted page, your disk cache retains an
+unencrypted copy of the page in an unencrypted form. Anyone having access to your Netscape
+disk cache can view the contents of the page.</P>
+
+ <H3>You cannot decrypt and display the page</H3>
+<P>You cannot decrypt messages on any computer but the one to which your certificates were
+issued. If you are using a computer other than the one you used when you obtained your
+certificates, you must contact your certificate issuer and obtain a new certificate for the computer
+you are now using.</P>
+<P>To decrypt your current messages, you must use your original computer, or use the certificate
+export and import features of the Security Info window.</P>
+<P>Update your personal certificate. If you are using the original computer on which your expired
+certificate was issued, after contacting the certificate issuer, you can regenerate a valid private
+key and can then decrypt the web page.</P>
+
+<HR>
+
+<H1><A NAME="passwords" TOCSTRING="Passwords" ></A></H1>
+
+<H2><A NAME="password_introduction" TOCSTRING="About Passwords"
+INDEXSTRING="passwords">About Passwords for Your Certificates</A></H2>
+
+<P>You can set a password that Netscape Navigator requires before enabling access to
+your collection of certificates.</P>
+<P>To set or alter your password:</P>
+<OL>
+<LI>Click <B>Security</B> on the Navigator toolbar to open the Security Info window.</LI>
+<BR>
+<LI>From the Security Info window, in the table of contents on the left, click <B> Your
+Password</B>.</LI.>
+</OL>
+
+<HR>
+
+<H2><A NAME="HELP_SEC_PASS_UNSET" INDEXSTRING="status^passwords">You do not
+have a password for your certificates</A></H2>
+
+<P>Set a password for access to your certificates. This helps to ensure that others using this
+computer and software installation cannot use your certificates without your knowledge.</P>
+
+<HR>
+<H2><A NAME="choosing_good" TOCSTRING="Choosing"
+INDEXSTRING="passwords^security">Choosing a Good Password</A></H2>
+
+<P>When choosing a password follow these guidelines, which make it difficult for your password
+to be guessed by a password-cracking program:<UL>
+<LI>Use at least six characters.</LI>
+<BR>
+<LI>Use a mix of uppercase and lowercase characters, numbers, and at least one non alphabetic
+symbol.</LI>
+<BR>
+<LI>Do not use any word found in any language dictionary, and do not add a numeric or symbolic
+prefix or suffix to a dictionary word in order to disguise it.</LI>
+<BR>
+<LI>Do not use any word that makes up part of your personal identification, such as your phone
+number or an ID number.</LI>
+<BR>
+<LI>Never write out your password in a file on a computer or on paper.</LI>
+<BR>
+<LI>Never forget your password. You cannot decrypt information without your password.</LI>
+</UL>
+
+<HR>
+
+<H2><A NAME="HELP_SEC_PASS_SET" INDEXSTRING="status^passwords">You already
+have a password</A></H2>
+
+<P>The software installation on this computer already has password-protected certificates for
+your user name. You cannot set a new password, if you do not know your existing password.</P>
+<P>If someone set up your account for you, you must obtain your password from that
+person.</P> <H3>If you forget your password</H3>
+<P>If you set your own password and have forgotten it, you cannot access your certificates or
+decrypt your messages. Your certificate issuer cannot provide you a replacement certificate, so
+you must obtain new certificates. Because you cannot access your certificates without your
+password, any encrypted messages you saved cannot be decrypted.</P>
+<H4>Suggestions:</H4>
+<UL>
+<LI>Ensure you do not have <B> caps lock</B> enabled on your keyboard.</LI>
+<BR>
+<LI>Contact your recipients and let them know that you may need them to resend important
+information.</LI>  </UL>
+<HR>
+
+<H2><A NAME="HELP_SEC_WARNING_FORWARDING" INDEXSTING="forwarding^security">Warning Concerning Forwarding a Decrypted
+Message</A></H2>
+
+<P>If you attempt to forward a decrypted message without first encrypting it, Navigator reminds you to encrypt it. </P>
+
+<HR>
+
+<H2><A NAME="HELP_SEC_WARNING_TAMPERED" >Warning Concerning Possible Message Tampering</A></H2>
+
+<P>A warning about message tampering appears only when an incoming message has been
+altered in some way after it was sent. Alteration of the original message content can be caused by
+corruption due to mishandling or to interception and forgery.</P>
+<H3>Suggestions:</H3>
+<UL>
+<LI>Return the tampered message to its sender and let the sender know you are
+having problems with encrypted or signed messages.</LI>
+<BR>
+<LI>Contact your system administrator or help desk to report the incident and to inquire about
+procedures they may have in place.</LI>
+</UL>
+<HR>
+
+<H2><A NAME="HELP_SEC_WARNING_MIXED" >Warning Concerning a Document Consisting
+of Both Encrypted and Unencrypted Parts</A></H2>
+<P> A warning about messages with mixed encryption appears only when you access
+a document that is encrypted, but contains unencrypted parts. If you do not feel that your
+system is secure, you may not want to open a document that contains unencrypted parts. </P>
+
+<HR>
+
+<H2><A NAME="HELP_SEC_WARNING_ENCRYPT" >Warning Concerning Failure to Encrypt
+Message</A></H2>
+
+<P>Check your address list. You cannot encrypt your message to any of your recipients if even
+one recipient has failed to distribute a valid certificate.</P>
+
+
+<P>Use the <B>Signers</B> panel to update your recipients' certificates. Your
+recipients may all have valid certificates, but may not have  distributed them recently. Signers can
+update all certificates of the types they distribute, and do so upon request.</P>
+
+<HR>
+
+<H2><A NAME="HELP_SEC_WARNING_CACHE" >Warning About Unencrypted Files in your Disk
+Cache</A></H2>
+
+<P>Warning: Once the browser displays an encrypted page, your disk cache retains an
+unencrypted copy of the page in an unencrypted form. Anyone having access to your Netscape
+disk cache can view the contents of the page.</P>
+
+<HR>
+<H2><A NAME="HELP_SEC_PREFS_NAVIGATOR" >About Navigator Security
+Settings</A></H2>
+<P>The following sections detail why you might want to enable warnings from Navigator:</P>
+<H3>Entering an encrypted site:</H3>
+<P>You need to be aware that the pages you are accessing are encrypted. Because the pages
+are decrypted without your intervention, you may want notification to remind you that you must
+clean up or secure downloaded files upon completion of your session.</P>
+<H3>Leaving an encrypted site:</H3>
+<P>You may want this warning as a reminder of when to remove decrypted files left on your local drive. Web pages are only encrypted during transmission from the web page server to your browser. Files in
+your cache or files you have saved to disk are not encrypted.</P>
+<H3>Viewing a page with an encrypted/unencrypted mix:</H3>
+<P>You may want this as a reminder to consult the Security Info panel, which identifies files
+encrypted during transmission.</P>
+
+<HR>
+
+<H2><A NAME="HELP_SEC_PREFS_APPLET"
+INDEXSTRING="applets^access^security">About Settings for Java applets and JavaScript</A></H2>
+
+<P>Use the Java/JavaScripts panel to view, remove, and edit access privileges for Java applets
+and JavaScript signed with a certificate issued by the signer listed in the list box.</P>
+
+<P>To use the Java/JavaScripts panel:</P>
+
+<OL TYPE="1"> <LI>Select a signer in the list.</LI>
+<BR>
+<LI>Click one of the following buttons: </LI>
+<BR>
+<UL>
+<LI><B>View Certificate</B> displays all the information contained in the certificate the signer
+uses to sign certificates they issue. This can help you to authenticate whether a certificate was
+issued by  the selected signer.</LI>
+<BR>
+<LI><B>Remove</B> denies all access privileges to all Java applets signed by the signer you've
+selected.</LI>
+<BR>
+<LI><B>Edit Privileges</B> enables you to customize privileges for all Java applets signed by the
+signer you've selected. When you click <B> Edit Privileges</B>, the Java applet dialog box appears.</LI>
+</UL>
+</OL>
+<HR>
+
+<H2><A NAME="HELP_SEC_JAVA_SECURITY"
+INDEXSTRING="applets^access^security^customization^preferences^targets^setting
+preferences" TOCSTRING="Java Applet Access">Using the Java Security Dialog Box to Set Java
+Applet Access Levels</A></H2>
+
+<P>Use the Java Security dialog box to grant or deny the access it describes:</P>
+<UL>
+<LI>To grant the access described, click <B>Grant</B>.</LI>
+<BR>
+<LI>To deny the access described, click <B>Deny</B>.</LI>
+<BR>
+<LI>To make Navigator remember your decision indefinitely, click the checkbox.
+<BR>
+If you don't choose to have Navigator remember this decision, the next time Java software
+signed by this entity requests access, Navigator displays this dialog box again.
+<BR>
+If you specify that you want Navigator  to remember your decision, Navigator
+always allows Java software signed by this entity to have this kind of access.</LI>
+</LI>
+</UL>
+<P>The Java Security dialog box provides information to help you make your decision:</P>
+<UL>
+<LI>To view the certificate used to sign the Java applet or JavaScript script, click
+<B>View</B>.</LI>
+<BR>
+<LI>The description of low, medium, and high risk can give you a rough idea of the degree of risk
+involved in granting access .</LI>
+<BR>
+<LI>The text box displays a short description of the kind of access the applet requests. For a
+more detailed description, click <B>Details</B>.</LI>
+</UL>
+<P>Netscape provides risk level categories High, Medium, and Low as guidelines only. You may
+have a different opinion about the degree of risk that access entails. Be sure to click <B>Details</B>
+and exactly what types of  access are involved and make your own decision.</P>
+<UL>
+<LI><B>High risk.</B> A major security attack is possible, permitting severe damage to your
+system or data. Major violation of privacy is possible, such as reading any information from hard
+disks connected to your computer. Very significant services may be requested, such as
+establishing a connection over the network to a remote computer.</LI>
+<BR>
+<LI><B>Medium risk.</B> Major violation of privacy is possible, such as reading any information
+from a hard disk connected to your computer. Some significant services may be requested, such
+as writing files on a hard disk or sending email on your behalf.</LI>
+<BR>
+<LI><B>Low risk.</B> Minor violation of privacy is possible, such as reading your user ID.
+Relatively minor services may be requested, such as writing a single file to a specified noncritical
+directory on a hard disk connected to your computer.</LI>
+</UL>
+<HR>
+<H2><A NAME="HELP_SEC_TARGET_DETAILS"
+INDEXSTRING="applets^access^security^customization^preferences^targets^setting
+preferences" TOCSTRING="Java Target Details">Using the Java Security Target Details Dialog
+Box</A></H2>
+
+<P>Use the Java Security Target Details dialog box to get detailed information about the kind of
+access a Java applet or JavaScript script is requesting:</P>
+<UL>
+<LI>The upper text box displays a detailed description of the requested access.</LI>
+<BR>
+<LI>The lower text box displays descriptions of the individual kinds of access the requested
+access includes (if it includes more than one kind of access).</LI>
+</UL>
+<P>The risk level categories High, Medium, and Low are provided by Netscape as guidelines
+only. You may have a different opinion about the level of risk this kind of access entails. Be sure
+to read the description of the access requested and make your own decision.</P>
+
+<P>Netscape's current classification system is based on these categories:</P>
+<UL>
+<LI><B>High risk.</B> A major security attack is possible, permitting severe damage to your
+system or data. Major violation of privacy is possible, such as reading any information from hard
+disks connected to your computer. Very significant services may be requested, such as
+establishing a connection over the network to a remote computer.</LI>
+<BR>
+<LI><B>Medium risk.</B> Major violation of privacy is possible, such as reading any information
+from a hard disk connected to your computer. Some significant services may be requested, such
+as writing files on a hard disk or sending email on your behalf.</LI>
+<BR>
+<LI><B>Low risk.</B> Minor violation of privacy is possible, such as reading your user ID.
+Relatively minor services may be requested, such as writing a single file to a specified noncritical
+directory on a hard disk connected to your computer.</LI>
+</UL>
+<HR>
+
+<H1><A NAME="about_certificates" TOCSTRING="About Certificates"></A></H1>
+
+<H2><A NAME="HELP_SEC_CERTS">About Certificates</A></H2>
+
+<P>You can obtain your own certificate by contacting a signing authority. You obtain certificates from others by opening a message from them, by accessing their web pages, and by allowing their Java applets access to your computer.</P>
+
+<HR>
+
+<H2><A NAME="HELP_SEC_CERTS_YOURS" INDEXSTRING="exporting" TOCSTRING="Your Certificates">About Your Own Certificates</A></H2>
+
+<P>To obtain a certificate for yourself, click <B>Get Certificate</B>. When you click <B>Get Certificate</B> Netscape Navigator connects to a signing authority. Through the signing authority, you obtain a certificate and generate keys.</P>
+
+<P>To use your certificate on a computer other than the one you used to obtain the certificate, you must export the certificate. To export a certificate, select it in the certificates list, then click <B>Export</B>.</P>
+<HR>
+<H2><A NAME="HELP_SEC_CERTS_SITES" >Certificates Collected from Web
+Pages</A></H2>
+<P>When you connect to a web site offering an encrypted web page, you collect a certificate from
+the site. This is a list of all the site certificates you've collected.</P>
+ <HR>
+<H2><A NAME="HELP_SEC_CERTS_APPLETS" >Certificates Collected from Java
+Applets</A></H2>
+<P>When you accept the use of a signed Java applet, you collect a certificate from the applet
+requesting access. This is a list of all the certificates you've collected.</P>
+<HR>
+<H2><A NAME="HELP_SEC_CERTS_ISSUERS" >About Certificate Signers</A></H2>
+<P>This is a list of all the organizations who have issued certificates you've either collected or
+own. Click on the name of the organization in order to select it. You can then verify all certificates
+by the selected issuer or obtain more information about the selected issuer.</P>
+<HR>
+<H2><A NAME="HELP_SEC_CERTS_CRYPTOMODS" >Cryptographic Modules</A></H2>
+<P>Cryptographic modules are loadable pieces of software that provide a function of
+cryptographic services, such as:</P>
+ <UL>
+<LI>smart card support (including PCMCIA smart cards and disk-based smart cards)</LI>
+<BR>
+<LI>specialized key distribution schemes, such as entrust</LI>
+<BR>
+<LI>hardware-accellerated cryptography (currently unavailable)</LI>
+<BR>
+ <LI>new ciphers (currently unavailable)</LI>
+<BR>
+<LI>FIPS compliance</LI>
+</UL>
+
+<HR>
+<H1><A NAME="K" TOCSTRING="Internet Security"></A></H1>
+<H2><A NAME="K1" INDEXSTRING="security^encryption^certificates^personal certificates^site certificates^signed communications" TOCSTRING="About Encryption">About Encryption</A></H2>
+<P>
+Netscape software allows computers to transfer information in a way
+that makes the misappropriation of the forms you send or the
+pages you receive more difficult. Security issues arise
+because information traveling on the Internet usually takes a
+circuitous route through several intermediary computers to reach any
+destination computer. The actual route your information takes to
+reach its destination is not under your control.
+<P>
+As your information travels on Internet computers, any intermediary
+computer has the potential to eavesdrop and make copies. An
+intermediary computer could even deceive you and exchange information
+with you by misrepresenting itself as your intended destination.
+These possibilities make the transfer of confidential information
+such as passwords or credit card numbers susceptible to abuse.
+<P>
+Navigator and Netscape servers use patented RSA public key
+cryptographic technology and custom software to allow you to send and
+receive information using built-in encryption capabilities. The
+protocols use open standards.
+<P>
+Your computer and the intended destination can encrypt and decrypt
+your information. In transit, the encrypted information is jumbled;
+an intermediary can continue to route the information, and even make
+copies of it, but is not provided with the tools to decrypt the
+information.
+<P>
+As part of the cryptographic technology, Navigator and Netscape
+servers provide a mechanism for Internet server authentication. This
+makes it more difficult for an intermediary computer to pose as your
+destination computer.
+
+<P>
+<H4>Communicating Information Such as Credit Card Numbers</H4>
+<P>
+You can enter your credit card number on an encrypted (<B>https</B>)
+Netscape Navigator form and transmit the form over the Internet to
+an SSL server to reduce the risk of an intermediary obtaining your
+credit card information. The encryption features offered by Netscape
+technology helps protect commercial transactions, as well as all
+other communications, from misappropriation and fraud that can occur
+as information passes through Internet computers.
+<P>
+Encrypted communications do not eliminate all of an Internet user's
+concerns. For example, you must be willing to trust the server
+administrator with your credit card number before you enter into a
+commercial transaction. Security technology helps protect the routes of
+Internet communication; security technology does not protect you from
+disreputable or careless people with whom you might choose to do
+business.
+<P>
+The situation is analogous to telling someone your credit card number
+over the telephone. You may be confident in knowing that no one has
+overheard your conversation (privacy) and that the person on the line
+works for the company you wish to buy from (authentication), but you
+must also be willing to trust the person and the company.
+<P>
+Server administrators need to take additional precautions to protect against
+security breeches. To protect your information, they need to maintain
+physical security of their server computers and control access to
+software passwords and private keys.
+
+<P>
+<H4>Site Certificates for Signed Communications</H4>
+<P>
+Site certificates identify others on the Internet to you. They are
+issued to organizations running servers.
+<P>
+If you are a server administrator and want to obtain a signed
+certificate, you need to submit a certificate request to a
+certificate authority. To operate using security features, an SSL
+server requires a digitally signed certificate. Without a
+certificate, the server can only operate without security
+capabilities. The process of obtaining a site certificate is explained
+in Netscape's server documentation.
+<P>
+Netscape Communications Corporation does not issue certificates.
+Certificates are issued by a certificate authority, a third-party
+organization. Information about certificate classifications and
+associated service fees can be obtained directly from the certificate
+authority.
+<P>
+
+<HR>
+<H2><A NAME="K2" INDEXSTRING="security^security info^page info^encryption^certificates^signed messages" TOCSTRING="Identifying Security Indicators">Identifying Security Indicators</A></H2>
+<P>
+Encryption is and certification capabilities are built into Navigator
+and many types of servers including web page servers, mail servers,
+and discussion group servers. Navigator uses information windows,
+graphical elements, and dialog boxes to inform you when you are
+interacting with server sites and messaging applications that offer
+encryption and certification capabilities.
+<P>
+Security information can be found in both the <B>Security Info</B>
+and <B>Page Info</B> windows.
+<UL>
+<LI>You can view the general security qualifications of a page and
+access dialogs for using Navigator's encryption and certificate features
+by opening the <B>Security Info</B> window. To display this window, click
+the <B>Security</B> toolbar button or choose <B>Security Info</B>
+from the <B>Window</B> menu.</LI>
+<BR>
+<LI>You can view more detailed encryption and certification
+qualifications of a page and its components by opening the <B>Page
+Info</B> window. To display this window, choose <B>Page Info</B> from the
+<B>View</B> menu.</LI>
+</UL>
+
+<P>
+<H3>To interact with the Security Info window</H3>
+<P>
+<OL>
+<LI>Click the <B>Security</B> button on the Navigator toolbar or choose <B>Security Info</B> from the <B>Window </B> menu.</LI>
+<BR>
+<LI>Click a category in the contents frame. The categories include
+security (status) information, personal and site certificates, current
+applications, passwords, and cryptographic modules. </LI>
+<BR>
+<LI>Use the fields and buttons on the right to
+interact with the available security features. </LI>
+<BR>
+<LI>Click the <B>Help</B> button in each display for particular information
+about the category. </LI>
+</OL>
+ 
+<P>
+<H3>To interact with the Page Info window:</H3>
+<P>
+<OL>
+<LI>Choose the <B>View</B> menu's <B>Page Info</B> item. A hierarchy
+of the page's URL and any component URLs is displayed in the upper
+frame. </LI>
+<BR>
+<LI>Click any URL in the upper frame to display the corresponding page
+information in the lower frame. The information presented in the
+lower frame includes encryption and certificate information specific
+to the URL. </LI>
+</OL>
+ 
+<P>
+<H3>To determine whether security features are in use:</H3>
+<UL>
+<LI>In the <B>Security</B> toolbar button, a closed padlock icon indicates an encrypted page; an
+open padlock icon indicates an unencrypted page. Click the
+padlock icon to display the <B>Security Info</B> window. </LI>
+<BR>
+<LI>A URL that begins with <B>https://</B> (instead of <B>http://</B>)
+indicates that a page comes from a server with encryption features.
+Similarly, a discussion group URL that begins with <B>snews:</B>
+(instead of <B>news:</B>) indicates that a page comes from a
+discussion group server with encryption features. </LI>
+<BR>
+<LI>Dialog boxes alert you to changes in security status among the
+pages you bring to screen. You can choose to bypass security
+dialogs by setting an option in the <B>Security Info</B> window. </LI>
+<BR>
+<LI>You can examine the security qualifications of a page and its
+components in more detail by choosing the <B>View</B> menu's <B>Page
+Info</B> item. The resulting display tells you about the page's
+encryption and certification. </LI>
+</UL>
+<P>
+<H3>To connect to an HTTP server that offers security:</H3>
+<P>
+Insert the letter <B>s</B> so that the URL begins with
+<B>https://</B>. A URL beginning with <B>https://</B> shows that the
+page came from a server using encryption. Use <B>http://</B>
+otherwise. Choose the <B>View</B> menu's <B>Page Info</B> item
+for security details.
+<P>
+Similarly, a discussion group URL that starts with <B>snews:</B> (instead
+of <B>news:</B>) shows that the page comes from a discussion group
+server using encryption (again, insert the letter <B>s</B> if your
+discussion group server offers security). Use two slashes (//) after the
+colon (:) for discussion group servers other than the default one.
+<P>
+<H3>Identifying mixed security pages</H3>
+<P>
+An encrypted page can only contain inline information from sources
+offering encryption. In a page of mixed security status, the
+unencrypted information is replaced by a mixed security icon. If you
+bring a mixed security page to your screen, you'll see a
+notification dialog box.
+<P>
+If a form appears on an encrypted page that has an unencrypted
+submission process, a notification dialog appears. The warning states
+that although the page is encrypted, the submission you are about
+to make is unencrypted and could be compromised by someone else. If
+you are sending passwords, credit card numbers, or other information
+you would like to keep private, you might want to cancel the
+submission.
+<P>
+If an unencrypted page contains encrypted information (either
+inline or as part of a form), no special action is taken. The
+page is considered unencrypted. This includes unencrypted forms
+that have encrypted submission processes.
+<P>
+<H3>Identifying notification dialog boxes</H3>
+<P>
+Several notification dialog boxes inform you about the security status of pages. You can choose whether or not to receive these dialogs by setting the options in the <B>Security Info</B> window. Alternatively, you can deselect a dialog's <B>Show this Alert Next Time</B> box.
+<BR>
+You are notified in the following situations:
+<UL>
+<LI>When requesting to view an encrypted page, you are told that
+the page is encrypted when transferred to you, and any
+information you send back is also encrypted. </LI>
+<BR>
+<LI>When requesting to view an unencrypted page after viewing an encrypted
+page, you are told that the unencrypted page could be
+observed by someone else when transferred to you, and any information
+you send back could also be read by someone else. </LI>
+<BR>
+<LI>When viewing a page with a mix of encrypted and unencrypted
+information, you are told that the encrypted page you just
+loaded contained some unencrypted information that will not be shown. </LI>
+<BR>
+<LI>When you submit a form using any unencrypted submission process, you
+are told that the submission process you are about to use is
+unencrypted. This means that the information you are sending could be
+compromised by someone else. </LI>
+<BR>
+<LI>You are always notified if the page was expected to be an
+encrypted page but is actually an unencrypted page (the page
+location has been redirected to an unencrypted page). This means
+that someone else could observe the page you are about to
+display. </LI>
+</UL>
+
+<HR>
+<H2><A NAME="K3" INDEXSTRING="security^encryption^public key^private key" TOCSTRING="About Public Key Technology">About Public Key Technology</A></H2>
+<P>
+The public key technology working within Navigator and
+Netscape servers is often described with unfamiliar security
+terminology. The following explanation of how public keys work may be
+an interesting supplement to your knowledge of Internet security.
+<P>
+A computer's security key is a file. You don't open a key (file) as
+you open a document or a word processor application. Keys are more
+like magnetic badges with powerful encryption and decryption
+capabilities.
+<P>
+There are two kinds of keys, private and public, and you need both. A
+private key sits on your computer and you never give it out. A public
+key can be copied repeatedly and given out to everybody.
+<P>
+You need both kinds of keys because they are fundamentally linked. You can pass your
+public key around to whomever you wish, but for any key to perform
+its decryption duty, it needs to be matched back to its linked key
+partner.
+<P>
+Both public and private keys have the ability to encrypt and (together as a set) decrypt information. Keys work in two primary ways:
+<UL>
+<LI>Other users can encrypt information with your public key (the key
+you've distributed freely) and send the information to you.
+You can then use your private key to decrypt their information. The
+sender wants to know that the message can be read only by you (encrypted
+for privacy) and has not been altered. </LI>
+<BR>
+<LI>You can encrypt information with your private key and send the
+information over the network. Anyone on the network who has
+your public key (the key you've distributed freely) can decrypt your
+message. The recipient wants to know that the message came only from
+you (authenticated with your digital signature) and has not been
+altered.</LI>
+</UL>
+<P>
+In summary, your public and private keys (files) are linked by a
+powerful cryptographic algorithm that could only be decoded by major
+computer resources. No one else's keys can decipher messages to you
+that are encrypted with your public key. And no one else can pose as
+you, because their keys cannot send messages encrypted with your private key.</P>
+
+<HR>
+
+<H2><A NAME="K4" INDEXSTRING="security" TOCSTRING="About Netscape's Security Technology">About Netscape's Security Technology</A></H2>
+<P>
+The Internet security technology developed by Netscape Communications
+to ensure private and authenticated communications (called SSL, short
+for Secure Sockets Layer protocol) is an open platform put into the
+public domain for the Internet community. Netscape Navigator and
+Netscape's SSL servers offer this nonproprietary technology. </P>
+<P>
+The security features built into Netscape Navigator and SSL servers
+help protect your Internet communications with: </P>
+<UL>
+<LI>server authentication (thwarting impostors) </LI>
+<BR>
+<LI>privacy using encryption (thwarting eavesdroppers) </LI>
+<BR>
+<LI>data integrity (thwarting vandals) </LI>
+</UL>
+<P>
+Without thorough encryption capabilities, information transmitted over
+the Internet is more susceptible to fraud and other misuse by
+intermediaries. Information traveling between your computer and a
+server uses a routing process that can extend over many computer
+systems. Any one of these computer systems represents an intermediary
+with the potential to access the flow of information between your
+computer and a trusted server. Encryption makes it more difficult for
+intermediaries to deceive you, eavesdrop on you, copy from you, or
+damage your communications. The Internet does not provide built-in
+encryption capabilities. </P>
+<P>
+The SSL protocol delivers server authentication, data encryption, and
+message integrity. SSL is layered beneath application protocols such
+as HTTP, SMTP, Telnet, FTP, Gopher, and NNTP, and layered above the
+connection protocol TCP/IP. This strategy allows SSL to operate
+independently of the Internet application protocols. </P>
+<P>
+The SSL protocol works as an adjunct to other protocols without
+limiting access capabilities. You can use Netscape Navigator to display
+either encrypted or unencrypted pages. Online forms can be encrypted if
+the submit action is an <B>https://</B> URL to an SSL server. </P>
+<P>
+You can save an encrypted page (though encrypted pages are not cached
+to disk across sessions). You can also view the HTML source of an
+encrypted page. Encryption affects the transmission of a page without
+affecting your ability to manipulate the page. </P>
+
+<P>
+<H4>The Degree of SSL Security Protection</H4>
+<P>
+SSL uses authentication and encryption technology developed by RSA
+Data Security. For example, Netscape Navigator's export
+implementation of SSL (U.S. government approved) uses a medium-grade,
+40-bit key size for the RC4 stream encryption algorithm. The
+encryption established between you and a server remains valid over
+multiple connections, yet the effort expended to defeat the
+encryption of one message cannot be simply leveraged to defeat the next
+message. </P>
+<P>
+A message encrypted with 40-bit RC4 takes, on average, 64 MIPS-years to
+break (a 64-MIPS computer needs a year of dedicated processor time to
+break the message's encryption). The high-grade, 128-bit U.S.
+domestic version provides protection exponentially more vast. The
+effort required to break any given exchange of information is a
+formidable deterrent. Server authentication uses RSA public key
+cryptography in conjunction with ISO X.509 digital certificates. </P>
+<P>
+Netscape Navigator and SSL servers deliver server
+authentication using signed digital certificates issued by trusted
+third parties known as certificate authorities. A digital certificate
+verifies the connection between a server's public key and the
+server's identification (just as a driver's license verifies the
+connection between your photograph and your personal identification).
+<P>Cryptographic checks, using digital signatures, help you trust the
+information within a certificate. </P>
+
+</BODY>
+</HTML>

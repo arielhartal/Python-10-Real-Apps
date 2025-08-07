@@ -1,0 +1,223 @@
+#VRML V2.0 utf8
+Background{
+  skyColor 1 1 1
+}
+DEF Mybody
+Transform{
+ translation 0 0 0
+ children[
+  Inline{
+    url"mybody.wrl"
+  }
+	DEF Myarm1
+	Transform{
+	 translation 0.06 -0.4 -0.3
+	 children[
+	  Inline{
+	    url"myarm1.wrl"
+	  }
+		 DEF Myarm2
+		Transform{
+	 	 translation 0 -0.25 0
+	 	 children[
+	  	  Inline{
+	  	    url"myarm2.wrl"
+	  	  }
+	 	 ]
+		}
+         ]
+	}
+	DEF Myarm3
+	Transform{
+	 translation 0.06 -0.4 0.18
+	 children[
+	  Inline{
+	    url"myarm1.wrl"
+	  }
+		DEF Myarm4
+		Transform{
+		 translation 0 -0.25 0
+		 children[
+		  Inline{
+		    url"myarm2.wrl"
+		  }
+		 ]
+		}
+	 ]
+	}
+
+	DEF Leg1
+	Transform{
+	 translation 0.01 -1.18 -0.1
+	 children[
+	  Inline{
+	    url"leg1.wrl"
+	  }
+		DEF Leg2
+		Transform{
+		 translation 0 -0.37 0
+		 children[
+		  Inline{
+		    url"leg2.wrl"
+		  }
+		 ]
+		}
+
+	 ]
+	}
+	DEF Leg3
+	Transform{
+	 translation 0.01 -1.18 0.07
+	 children[
+	  Inline{
+	    url"leg1.wrl"
+	  }
+		DEF Leg4
+		Transform{
+		 translation 0 -0.37 -0.06
+		 children[
+		  Inline{
+		    url"leg2.wrl"
+		  }
+		 ]
+		}
+	 ]
+	}
+
+ ]
+}
+DEF Myarm1Interpolator OrientationInterpolator{
+  key[0,0.125,0.25,0.375,0.5,0.625,0.75,0.875,1]
+  keyValue[
+    0 0 1 1.57,
+    0 0 1 0.785,
+    0 0 1 0,
+    0 0 1 -0.785,
+    0 0 1 -1.57,
+    0 0 1 -0.785,
+    0 0 1 0,
+    0 0 1 0.785,
+    0 0 1 1.57,
+  ]
+}
+DEF Myarm2Interpolator OrientationInterpolator{
+  key[0,0.125,0.25,0.375,0.5,0.625,0.75,0.875,1]
+  keyValue[
+    0 0 1 -0.785,
+    0 0 1 -1.57,
+    0 0 1 -0.785,
+    0 0 1 0,
+    0 0 1 0,
+    0 0 1 0,
+    0 0 1 0,
+    0 0 1 -1.57,
+    0 0 1 -0.785,
+  ]
+}
+DEF Myarm3Interpolator OrientationInterpolator{
+  key[0,0.125,0.25,0.375,0.5,0.625,0.75,0.875,1]
+  keyValue[
+    0 0 1 -1.57,
+    0 0 1 -0.785,
+    0 0 1 0,
+    0 0 1 0.785,
+    0 0 1 1.57,
+    0 0 1 0.785,
+    0 0 1 0,
+    0 0 1 -0.785,
+    0 0 1 -1.57,
+  ]
+}
+DEF Myarm4Interpolator OrientationInterpolator{
+  key[0,0.125,0.25,0.375,0.5,0.625,0.75,0.875,1]
+  keyValue[
+    0 0 1 -0.785,
+    0 0 1 -1.57,
+    0 0 1 -0.785,
+    0 0 1 0,
+    0 0 1 0,
+    0 0 1 0,
+    0 0 1 0,
+    0 0 1 -1.57,
+    0 0 1 -0.785,
+  ]
+}
+DEF Leg1Interpolator OrientationInterpolator{
+  key[0,0.125,0.25,0.375,0.5,0.625,0.75,0.875,1]
+  keyValue[
+    0 0 1 1.57,
+    0 0 1 0.785,
+    0 0 1 0,
+    0 0 1 -0.785,
+    0 0 1 -1.57,
+    0 0 1 -0.785,
+    0 0 1 0,
+    0 0 1 0.785,
+    0 0 1 1.57,
+  ]
+}
+DEF Leg2Interpolator OrientationInterpolator{
+  key[0,0.125,0.25,0.375,0.5,0.625,0.75,0.875,1]
+  keyValue[
+    0 0 1 0.785,
+    0 0 1 0.685,
+    0 0 1 0,
+    0 0 1 0,
+    0 0 1 0.385,
+    0 0 1 0.685,
+    0 0 1 1.00,
+    0 0 1 1.785,
+    0 0 1 1.00,
+  ]
+}
+DEF Leg3Interpolator OrientationInterpolator{
+  key[0,0.125,0.25,0.375,0.5,0.625,0.75,0.875,1]
+  keyValue[
+    0 0 1 -1.57,
+    0 0 1 -0.785,
+    0 0 1 0,
+    0 0 1 0.785,
+    0 0 1 1.57,
+    0 0 1 0.785,
+    0 0 1 0,
+    0 0 1 -0.785,
+    0 0 1 -1.57,
+  ]
+}
+DEF Leg4Interpolator OrientationInterpolator{
+  key[0,0.125,0.25,0.375,0.5,0.625,0.75,0.875,1]
+  keyValue[
+    0 0 1 1.00,
+    0 0 1 1.585,
+    0 0 1 0.785,
+    0 0 1 1.00,
+    0 0 1 1.575,
+    0 0 1 1.00,
+    0 0 1 0.785,
+    0 0 1 0,
+    0 0 1 0,
+  ]
+}
+
+DEF MyTimer TimeSensor{
+  cycleInterval 8
+  loop TRUE
+}
+ROUTE MyTimer.fraction_changed TO Myarm1Interpolator.set_fraction
+ROUTE MyTimer.fraction_changed TO Myarm2Interpolator.set_fraction
+ROUTE MyTimer.fraction_changed TO Myarm3Interpolator.set_fraction
+ROUTE MyTimer.fraction_changed TO Myarm4Interpolator.set_fraction
+ROUTE MyTimer.fraction_changed TO Leg1Interpolator.set_fraction
+ROUTE MyTimer.fraction_changed TO Leg2Interpolator.set_fraction
+ROUTE MyTimer.fraction_changed TO Leg3Interpolator.set_fraction
+ROUTE MyTimer.fraction_changed TO Leg4Interpolator.set_fraction
+
+ROUTE Myarm1Interpolator.value_changed TO Myarm1.set_rotation
+ROUTE Myarm2Interpolator.value_changed TO Myarm2.set_rotation
+ROUTE Myarm3Interpolator.value_changed TO Myarm3.set_rotation
+ROUTE Myarm4Interpolator.value_changed TO Myarm4.set_rotation
+ROUTE Leg1Interpolator.value_changed TO Leg1.set_rotation
+ROUTE Leg2Interpolator.value_changed TO Leg2.set_rotation
+ROUTE Leg3Interpolator.value_changed TO Leg3.set_rotation
+ROUTE Leg4Interpolator.value_changed TO Leg4.set_rotation
+

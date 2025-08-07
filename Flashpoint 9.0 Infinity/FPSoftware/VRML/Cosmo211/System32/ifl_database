@@ -1,0 +1,35 @@
+format GIF
+    match         string(0,6) == "GIF87a" || string(0,6) == "GIF89a"
+    description	"GIF image"
+    dso		ifl_gif.dll
+    subsystem	"cosmo"
+    suffixes	.gif
+
+format JFIF
+    match         ulong(0) == 0xffd8ffe0 && string(6,4) == "JFIF" || ulong(0) == 0xffd8fffe
+    description   "JFIF/JPEG image"
+    dso		ifl_jpeg.dll
+    subsystem	"cosmo"
+    suffixes	.jpg,.jpeg,.jfif
+
+format SGI 
+    match         ushort(0) == 0x01da || ushort(0) == 0xda01
+    description   "Classic SGI image"
+    dso           ifl_sgi.dll
+    subsystem     "cosmo"
+    suffixes      .rgb,.rgba,.bw
+
+format PNG
+    match         ulong(0) == 0x89504e47 && ulong(4) == 0x0d0a1a0a
+    description   "PNG image"
+    dso           ifl_png.dll
+    subsystem     "cosmo"
+    suffixes      .png
+
+format GZIP
+    match         string(0,2) == "\037\213"
+    description   "GZIP compression"
+    dso           ifl_libz.dll
+    subsystem     "cosmo"
+    suffixes      .gz
+

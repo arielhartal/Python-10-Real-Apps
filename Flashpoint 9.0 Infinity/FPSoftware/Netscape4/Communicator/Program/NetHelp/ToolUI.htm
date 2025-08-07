@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--
+FILE:   ToolUI.htm
+DESCR:  Tool UI document for Netscape Help implementation.
+NOTES:  
+-->
+
+<HTML>
+
+<HEAD>
+
+<STYLE TYPE = 'text/javascript'>
+classes.label.all.fontFamily = 'arial';
+classes.label.all.fontSize = '12px';
+classes.label.all.color = '#000066';
+</STYLE>
+
+</HEAD>
+
+<BODY BGCOLOR = "#99ccff" ONLOAD = "top.SystemFrame.systemObj.componentCallback( 'ToolUI.htm' )">
+
+<!-- Load button control -->
+<SCRIPT SRC = "Button.js" LANGUAGE = "JavaScript1.2"></SCRIPT>
+
+<SCRIPT LANGUAGE = "JavaScript1.2">
+
+var CONTENTS_LABEL = "Contents"
+var INDEX_LABEL    = "Index"
+var SEARCH_LABEL   = "Find"
+
+// Create a button bar object.
+var btnBar = new buttonBar( "#99ccff", false, "left", "0", "", "btnBar" )
+
+// Add buttons.
+var btn
+btn = new button( "Tool_up.gif", "Tool_dep.gif", "Tool_sel.gif", "",
+                  "top.SystemFrame.systemObj.loadTool( 'CntTool.htm' )",
+                  true, CONTENTS_LABEL, "", btnBar )
+btnBar.addButton( btn )
+btn = new button( "Tool_up.gif", "Tool_dep.gif", "Tool_sel.gif", "",
+                  "top.SystemFrame.systemObj.loadTool( 'IdxTool.htm' )",
+                  true, INDEX_LABEL, "", btnBar )
+btnBar.addButton( btn )
+btn = new button( "Tool_up.gif", "Tool_dep.gif", "Tool_sel.gif", "",
+                  "top.SystemFrame.systemObj.loadTool( 'SrhTool.htm' )",
+                  false, SEARCH_LABEL, "", btnBar )
+btnBar.addButton( btn )
+
+// Create the bar.
+btnBar.create()
+
+</SCRIPT>
+
+</BODY>
+
+</HTML>

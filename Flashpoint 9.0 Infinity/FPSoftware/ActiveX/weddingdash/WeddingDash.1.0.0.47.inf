@@ -1,0 +1,13 @@
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+WeddingDash.1.0.0.47.dll=WeddingDash.1.0.0.47.dll
+
+[WeddingDash.1.0.0.47.dll]
+file-win32-x86=thiscab
+clsid={EA6246B4-F380-443f-8727-9AEA3371146C}
+FileVersion=1,0,0,47
+RegisterServer=yes
+

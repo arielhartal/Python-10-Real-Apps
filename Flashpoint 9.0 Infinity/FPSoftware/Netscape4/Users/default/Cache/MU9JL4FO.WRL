@@ -1,0 +1,94 @@
+#VRML V2.0 utf8
+Background{
+ skyColor 1 1 1
+}
+Transform{
+ translation 0 -0.9 0.3
+ children[
+Shape{
+ appearance Appearance{
+  material Material{
+   diffuseColor 1 1 0
+  }
+ }
+ geometry Box{
+  size 0.5 0.2 0.3
+ }
+}
+]
+}
+Transform{
+ translation 0 -1.1 0.33
+ children[
+Shape{
+ appearance Appearance{
+  material Material{
+   diffuseColor 1 0.5 0.5
+  }
+ }
+ geometry Box{
+  size 0.5 0.2 0.3
+ }
+}
+]
+}
+Transform{
+ translation 0 -1.3 0.35
+ children[
+Shape{
+ appearance Appearance{
+  material Material{
+   diffuseColor 1 1 0
+  }
+ }
+ geometry Box{
+  size 0.5 0.2 0.3
+ }
+}
+]
+}
+Transform{
+ translation 0 -1.5 0.37
+ children[
+Shape{
+ appearance Appearance{
+  material Material{
+   diffuseColor 1 0.5 0.5
+  }
+ }
+ geometry Box{
+  size 0.5 0.2 0.3
+ }
+}
+]
+}
+Transform{
+ translation 0 -1.7 0.35
+ children[
+Shape{
+ appearance Appearance{
+  material Material{
+   diffuseColor 1 1 0
+  }
+ }
+ geometry Box{
+  size 0.5 0.2 0.3
+ }
+}
+]
+}
+Transform{
+ translation 0 -1.9 0.33
+ children[
+Shape{
+ appearance Appearance{
+  material Material{
+   diffuseColor 1 0.5 0.5
+  }
+ }
+ geometry Box{
+  size 0.5 0.2 0.3
+ }
+}
+]
+}

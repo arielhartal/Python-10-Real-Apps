@@ -1,0 +1,214 @@
+/*
+  ==Theme==
+  @name              eXPerience
+  @version           1.0
+  @description       Near-complete recreation of Windows XP's visual style
+  @author            Wumbo
+  @launcher-version  7.1.0
+  ==/Theme==
+*/
+
+:root {
+  --layout__primary-font:                                           'Tahoma', sans-serif;
+  --layout__valid-color:                                            #aaffaa;
+  --layout__invalid-color:                                          #ffaaaa;
+  --layout__primary-text-color:                                     #000000;
+  --layout__secondary-text-color:                                   var(--layout__primary-text-color);
+  --layout__highlighted-text-color:                                 #215dc6;
+  --layout__disabled-text-color:                                    var(--layout__primary-text-color);
+  --layout__primary-background:                                     #ffffff;
+  --layout__secondary-background:                                   #ece7cd;
+  --layout__tertiary-background:                                    #0054d9;
+  --layout__quaternary-background:                                  var(--layout__primary-background);
+  --layout__primary-outline-color:                                  var(--layout__primary-text-color);
+  --layout__scroll-thumb-color:                                     #c6d6fd;
+  --layout__scroll-thumb-color-hover:                               var(--layout__scroll-thumb-color);
+  --layout__scroll-thumb-color-active:                              var(--layout__scroll-thumb-color);
+  --layout__slider-background:                                      var(--layout__scroll-thumb-color);
+  --layout__slider-background-hover:                                var(--layout__slider-background);
+  --layout__slider-background-active:                               var(--layout__slider-background);
+  --layout__game-item-color:                                        var(--layout__primary-text-color);
+  --layout__game-item-color-selected:                               var(--layout__primary-background);
+  --layout__game-list-item-background-even:                         var(--layout__home-page-box-background);
+  --layout__game-item-background-hover:                             var(--layout__primary-background);
+  --layout__game-item-background-selected:                          var(--layout__generic-highlight);
+  --layout__game-item-background-selected-hover:                    var(--layout__generic-highlight);
+  --layout__browse-sidebar-background:                              #708ddf;
+  --layout__browse-sidebar-divider-background:                      var(--layout__primary-background);
+  --layout__browse-right-sidebar-screenshot-placeholder-background: var(--layout__primary-text-color);
+  --layout__browse-right-sidebar-screenshot-placeholder-border:     var(--layout__primary-background);
+  --layout__playlist-list-item-even-background:                     var(--layout__browse-sidebar-background);
+  --layout__playlist-list-fake-even-background:                     var(--layout__home-page-box-background);
+  --layout__playlist-list-item-content-background:                  var(--layout__home-page-box-background);
+  --layout__playlist-list-item-hover-color:                         var(--layout__browse-sidebar-background);
+  --layout__playlist-list-item-editing-odd-background:              var(--layout__primary-background);
+  --layout__playlist-list-item-editing-even-background:             var(--layout__primary-background);
+  --layout__playlist-list-item-editing-content-background:          var(--layout__primary-background);
+  --layout__playlist-list-item-editing-description-background:      var(--layout__primary-background);
+  --layout__home-page-box-border:                                   var(--layout__primary-background);
+  --layout__home-page-box-background:                               #d6dff7;
+  --layout__log-page-bar-background:                                var(--layout__secondary-background);
+  --layout__developer-page-log-background:                          var(--layout__primary-background);
+  --layout__developer-page-log-border:                              var(--layout__primary-text-color);
+  --layout__no-theme-suggestion-color:                              var(--layout__primary-text-color);
+  --layout__footer-scale-slider-icon-color:                         var(--layout__primary-text-color);
+  --layout__footer-scale-slider-background:                         var(--layout__primary-background);
+  --layout__generic-highlight:                                      #006cff;
+}
+.simple-button {
+  background-color: #00000000;
+  border-color: #00000000;
+  color: var(--layout__primary-text-color);
+}
+.simple-button:hover {
+  background-color: var(--layout__generic-highlight);
+  border-color: var(--layout__generic-highlight);
+  color: var(--layout__primary-background);
+}
+.simple-input,
+.input-dropdown__input-field__back {
+  background-color: var(--layout__primary-background);
+}
+.input-dropdown__content label:hover,
+.input-dropdown__content label:focus {
+  color: var(--layout__primary-background);
+}
+.input-dropdown__content {
+  background-color: var(--layout__primary-background);
+}
+.title-bar {
+  height: 26px;
+  background-image: url(img/topgrd.png);
+}
+.title-bar__title {
+  color: #ffffff;
+  font-size: 14px;
+  text-shadow: 2px 2px #041959;
+  margin: 2px 0px 0px 2px;
+}
+.title-bar__button-bar {
+  margin: 2px 2px 0px 0px;
+}
+.title-bar__button-bar__min,
+.title-bar__button-bar__max,
+.title-bar__button-bar__cross {
+  width: 22px;
+  cursor: default;
+  opacity: 1;
+}
+.title-bar__button-bar__min {
+  background-image: url(img/min.png);
+}
+.title-bar__button-bar__max {
+  background-image: url(img/max.png);
+}
+.title-bar__button-bar__cross {
+  background-image: url(img/cls.png);
+}
+.title-bar__button-bar__min:hover, 
+.title-bar__button-bar__max:hover, 
+.title-bar__button-bar__cross:hover {
+  filter: brightness(125%);
+  background-color: transparent;
+  cursor: default;
+}
+.title-bar__button-bar__min:active, 
+.title-bar__button-bar__max:active, 
+.title-bar__button-bar__cross:active {
+  filter: brightness(150%);
+  background-color: transparent;
+  cursor: default;
+}
+.header {
+  font-size: 12px;
+  padding: 0px;
+}
+.header__menu__item__link {
+  display: inline-block;
+  padding: 0.3em 0.5em;
+  cursor: default;
+}
+.header__menu__item__link:hover {
+  background-color: var(--layout__generic-highlight);
+  border-color: var(--layout__generic-highlight);
+  color: var(--layout__primary-background);
+  cursor: default;
+}
+.header__search {
+  padding: 0px 2px;
+}
+.header__toggle-sidebar,
+.header__toggle-sidebar:hover,
+.header__toggle-sidebar:active {
+  cursor: default;
+}
+.footer__scale-percent {
+  width: 2.75em;
+}
+.about-page__section__title {
+  background-color: var(--layout__primary-background);
+  font-weight: bold;
+}
+.about-page__credits__profile {
+  clip-path: none;
+}
+.about-page__credits__tooltip {
+  border-color: var(--layout__primary-outline-color);
+  background-color: var(--layout__primary-background);
+  padding: 4px;
+}
+.about-page__credits__tooltip__note {
+  color: var(--layout__disabled-text-color);
+  font-style: normal;
+}
+.about-page__credits__tooltip__roles p {
+  background-color: var(--layout__primary-background);
+}
+.log-page__dropdown-item:hover {
+  color: var(--layout__primary-background);
+}
+.game-browser__sidebar {
+  color: var(--layout__primary-background);
+}
+.game-image-split {
+  --inner-border-color: var(--layout__primary-text-color);
+}
+.game-list-item,
+.game-list-item--even {
+  background-color: var(--layout__primary-background);
+}
+.game-list-item:hover,
+.game-grid-item:hover {
+  cursor: default;
+}
+.game-list-item--selected {
+  background-color: var(--layout__generic-highlight);
+}
+.game-list-item--selected:hover {
+  color: var(--layout__primary-background);
+}
+.game-list-header__scroll-fill,
+.game-list-header-column--icon {
+  background: #00000000;
+}
+.game-grid-item--selected:hover {
+  color: var(--layout__primary-background);
+}
+.game-grid-item__thumb__image {
+  border-color: var(--layout__primary-background);
+  box-shadow: 0px 0px 0px #ffffff;
+}
+.playlist-list-item {
+  background-color: var(--layout__home-page-box-background);
+}
+.playlist-list-item:hover,
+.playlist-list-fake-item:hover {
+  background-color: var(--layout__primary-background);
+}
+.setting__body {
+  border-color: var(--layout__primary-background);
+  box-shadow: 0px 0px 0px #ffffff;
+}
+.setting__row:not(:first-child) {
+  border-top-color: var(--layout__primary-background);
+}

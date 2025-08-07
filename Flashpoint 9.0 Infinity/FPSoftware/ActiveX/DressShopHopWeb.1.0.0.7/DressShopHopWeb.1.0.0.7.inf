@@ -1,0 +1,13 @@
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+DressShopHopWeb.1.0.0.7.dll=DressShopHopWeb.1.0.0.7.dll
+
+[DressShopHopWeb.1.0.0.7.dll]
+file-win32-x86=thiscab
+clsid={F4EBFE42-D82A-48EB-B70E-7499FFEAFF3F}
+FileVersion=1,0,0,7
+RegisterServer=yes
+

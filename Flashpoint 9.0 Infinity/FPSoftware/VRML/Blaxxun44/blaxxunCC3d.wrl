@@ -1,0 +1,66 @@
+#VRML V2.0 utf8
+NavigationInfo {
+headlight FALSE
+type "NONE"
+}
+Viewpoint {
+position 0 0 4.05
+orientation 0 0 1 0
+}
+Group {
+children [
+Shape {
+appearance Appearance {
+texture ImageTexture {
+url "images/weiss1.gif"
+}
+}
+geometry IndexedFaceSet {
+coord Coordinate {
+point [
+-15 15 0, 15 15 0, 2.56 1.28 0, -2.56 1.28 0, 15 -15 0, 2.56 -1.28 0, -15 -15 0, -2.56 -1.28 0,
+]
+}
+normalPerVertex FALSE
+ccw FALSE
+coordIndex [
+0 1 2 3 -1, 2 1 4 5 -1, 4 6 7 5 -1, 6 0 3 7 -1,
+]
+}
+}
+]
+}
+Transform {
+rotation 1 0 0 1.5708
+scale 5.12 1 2.56
+children [
+Group {
+children [
+Shape {
+appearance Appearance {
+texture ImageTexture {
+url "images/logo_weiss.gif"
+}
+}
+geometry IndexedFaceSet {
+coord Coordinate {
+point [
+-.5 0 .5, -.5 0 -.5, .5 0 -.5, .5 0 .5,
+]
+}
+texCoord TextureCoordinate {
+point [
+0 0, 0 1, 1 1, 1 0,
+]
+}
+normalPerVertex FALSE
+ccw FALSE
+coordIndex [
+0 1 2 3 -1,
+]
+}
+}
+]
+}
+]
+}

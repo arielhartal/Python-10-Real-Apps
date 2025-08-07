@@ -1,0 +1,55 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "f8b3a9bdea794c8e7802d9d27d893ac6",
+    "packages": [
+        {
+            "name": "emilkm/efxphp",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/emilkm/efxphp.git",
+                "reference": "c4d150b510eb33329805f8442e2a5118553ab04a"
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=5.7"
+            },
+            "suggest": {
+                "emilkm/amfext": "Custom PHP extension for Action Message Format (AMF) encoding and decoding with support for AMF0 and AMF3"
+            },
+            "type": "library",
+            "license": [
+                "Apache License 2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Emil Malinov",
+                    "email": "emilkm@gmail.com"
+                }
+            ],
+            "description": "PHP server library for AMF applications",
+            "homepage": "http://emilmalinov.com/efxphp",
+            "keywords": [
+                "amf",
+                "efxphp"
+            ],
+            "time": "2018-02-12T23:00:27+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "emilkm/efxphp": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

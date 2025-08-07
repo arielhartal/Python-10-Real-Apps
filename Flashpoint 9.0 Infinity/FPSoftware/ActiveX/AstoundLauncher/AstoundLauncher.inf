@@ -1,0 +1,14 @@
+[Version]
+    Signature="$CHICAGO$"
+    AdvancedINF=2.0
+
+[Add.Code]
+    AstoundLauncher.ocx=AstoundLauncher.ocx
+
+[AstoundLauncher.ocx]
+    clsid={C86FF4B0-AA1D-46D4-8612-025FB86583C7}
+    file-win32-x86=thiscab
+    RegisterServer=yes
+    FileVersion=1,0,1,1
+
+

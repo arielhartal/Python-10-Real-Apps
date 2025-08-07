@@ -1,0 +1,14 @@
+; Rubik.ocx
+; Rubik's Cube
+
+[Add.Code]
+Rubik.ocx=Rubik.ocx
+
+[Rubik.ocx]
+file-win32-x86=thiscab
+clsid={56FEB34D-6CB5-11D4-A057-00104B5FBF5B} 
+DestDir=11
+FileVersion=1,0,0,2 
+RegisterServer=yes  
+; end of INF file
+

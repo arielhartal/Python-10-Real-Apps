@@ -1,0 +1,129 @@
+#VRML V1.0 ascii
+#starcube.wrl -- Higher Source 7/15/96 (Sonny)
+#Note: The tiling must have the path relative to the URL directory
+# The background can be picked up from the wrl dir, but not the tile.
+DEF BackgroundImage Info { string "../img/blueback.jpg" }
+SpotLight {
+     location 0 4 0
+     intensity 0.7
+     cutOffAngle 1.9
+     direction 0 -1 0
+} 
+Separator
+{
+Separator {  # title
+    Translation { translation 0 .75 1 }
+    Material { ambientColor  .1 .1 .9 
+               diffuseColor  .1 .1 .9
+               emissiveColor .1 .1 .9
+               shininess     .9
+               transparency  .0
+             }
+    FontStyle { size .25 }
+    AsciiText { string "Enter for" justification CENTER }
+}
+Separator {  # title
+    Translation { translation 0 -.95 1 }
+    Material { ambientColor  .1 .1 .9 
+               diffuseColor  .1 .1 .9
+               emissiveColor .1 .1 .9
+               shininess     .9
+               transparency  .0
+             }
+    FontStyle { size .25 }
+    AsciiText { string "Nested Worlds" justification CENTER }
+}
+Separator {  # title
+    Translation { translation 0  0 .25 }
+    Material { ambientColor  .9 .9 .1 
+               diffuseColor  .9 .9 .1
+               emissiveColor .9 .9 .1
+               shininess     .9
+               transparency  .0
+             }
+    FontStyle { size .05 }
+    AsciiText { string "Inner Worlds" justification CENTER }
+}
+Separator {  # outer cube
+    Translation { translation 0 0 0 }
+    Texture2Transform { 
+        rotation 0.7854
+        scaleFactor  16 16
+        center 0.5 0.5
+    }
+    Texture2 { 
+        filename "../img/tile.gif" 
+        wrapS REPEAT
+        wrapT REPEAT
+    }
+    Cube { }
+}
+Separator {  # outer sphere (top)
+    Translation { translation 0 1.25 0 }
+    Texture2Transform { 
+        rotation 0.0
+        scaleFactor  1 1
+        center 0.5 0.5
+    }
+    Material { diffuseColor 0 0 1 } # blue
+    Sphere { radius .05 }
+}
+Separator {  # outer sphere (bottom)
+    Translation { translation -1.5 -1 0 }
+    Texture2Transform { 
+        rotation 0.0
+        scaleFactor  1 1
+        center 0.5 0.5
+    }
+    Material { diffuseColor 1 0 .5 } # red
+    Sphere { radius .05 }
+}
+Separator {  # outer sphere  (right)
+    Translation { translation 1.5 1 1.5 }
+    Texture2Transform { 
+        rotation 0.0
+        scaleFactor  1 1
+        center 0.5 0.5
+    }
+    Material { diffuseColor 1 1 0 } # yellow
+    Sphere { radius .05 }
+}
+Separator {  # Inner blue sphere
+    Translation { translation 0 0 0 }
+    Texture2Transform { 
+        center 0.5 0.5
+    }
+    Material { diffuseColor 0 0 1 } # blue
+    Sphere { radius .25 }
+}
+Separator {  # Inner turquois sphere
+    Translation { translation .35 0 0 }
+    Texture2Transform { 
+        center 0.5 0.5
+    }
+    Material { diffuseColor 0 1 1 } # turquois
+    Sphere { radius .1 }
+}
+Separator {  # Inner turquois sphere
+    Translation { translation -.35 0 0 }
+    Texture2Transform { 
+        center 0.5 0.5
+    }
+    Material { diffuseColor 1 0 1 } # magenta 
+    Sphere { radius .1 }
+}
+Separator {  # inner star sphere
+    Translation { translation 0 0 0 }
+    Texture2Transform { 
+        rotation 0.7854
+        scaleFactor  16 16
+        center 0.5 0.5
+    }
+    Texture2 { 
+        filename "../img/tile.gif" 
+        wrapS REPEAT
+        wrapT REPEAT
+    }
+    Sphere { radius .06 }
+}
+}

@@ -1,0 +1,21 @@
+; help.hpf
+; Auto-generated NetHelp project file
+
+Window-Name="Communicator Help"
+Window-Size="425,440"
+NetHelp-Version="2"
+<Frame_Group src = "../../NSHIfrm.htm" default_window = "">
+
+<ID_MAP>
+
+start_here = "home.htm#start_here" : target = "Topic"
+About_Navigator = "home.htm#About_Navigator" : target = "Topic"
+About_Netcaster = "home.htm#About_Netcaster" : target = "Topic"
+About_Security = "home.htm#About_Security" : target = "Topic"
+About_UserProfiles = "home.htm#About_UserProfiles" : target = "Topic"
+Creating_UserProfiles = "home.htm#Creating_UserProfiles" : target = "Topic"
+Error_Message_Info = "home.htm#Error_Message_Info" : target = "Topic"
+Finding_index = "home.htm#Finding_index" : target = "Topic"
+OtherHelp = "home.htm#OtherHelp" : target = "Topic"
+
+</ID_MAP>

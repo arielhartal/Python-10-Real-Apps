@@ -1,0 +1,53 @@
+{
+  "id": "5c34d0cb-be83-40ea-8410-4e9b72142330",
+  "games": [
+    {
+      "id": "74f937b3-7bf3-4ad8-869a-1740e164ef3f",
+      "notes": ""
+    },
+    {
+      "id": "657858dc-4f70-4811-8b10-96b12ffd0a6c",
+      "notes": "2"
+    },
+    {
+      "id": "17f7d182-76de-4c25-ba86-3e0a6ed4a70a",
+      "notes": "3"
+    },
+    {
+      "id": "690c45e4-ee88-4f21-bf4a-50d1343d095c",
+      "notes": "4"
+    },
+    {
+      "id": "da033318-11cc-420c-8742-e67d326414d4",
+      "notes": "5"
+    },
+    {
+      "id": "1c616511-b47d-4d59-91ed-54ecdbaba294",
+      "notes": "6"
+    },
+    {
+      "id": "da2b3f15-c3c5-492b-a8c5-f2cec4b6a43a",
+      "notes": "7"
+    },
+    {
+      "id": "4b9444a4-5545-4fc3-b03a-48b493d77890",
+      "notes": "8"
+    },
+    {
+      "id": "f52756c7-eae9-4e96-b50c-7b021839d526",
+      "notes": "9"
+    },
+    {
+      "id": "bb913405-2f59-4caa-aa52-55f3ff99ff6f",
+      "notes": "10"
+    },
+    {
+      "id": "4bc30245-5417-41f1-8061-b5543347569a",
+      "notes": "11"
+    }
+  ],
+  "title": "Puzzling Pursuits",
+  "description": "Some of the best mindbenders this side of the internet.",
+  "author": "BlueMaxima",
+  "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAABKCAMAAAArDjJDAAAAkFBMVEX/////AAD/fX3/enr/+Pj/amr/Hx//Q0P/7u7/2Nj/9/f/paX/8/P/4OD/6+v/+/v/dXX/w8P/m5v/Xl7/j4//V1f/yMj/sLD/MTH/GBj/ubn/cHD/qqr/hYX/oKD/Dg7/lZX/z8//PT3/NDT/SEj/Tk7/KSn/vLz/cXH/XFz/3d3/iYn/TEz/ZGT/zMz/JSWE01wKAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfiCg0FFi7pB6qmAAABB0lEQVRYw+3YYQuCMBAG4B1jhcREicgZapJUFP3/v1cERZvKxu4N/LD3Ux+Oh4S781CImeiKXpGCnZI+6ZgS/SbjSMqiCPanWJYrUY2jVrGSHlHRT9jgqAJHtThKACnjSvkSWlQccIMjMA06pjY46hbckHIiFnWdqtgHNVFQZKISlahEJYpN5e/fpuZTzqsykir0xbi3L4ECpDocRUBK4ihKVHAqHKWX2FflEmZQ2je5Yq8+Y13286O+U2rtXcht0WjPQv4e6yfubvdWhFKdvySUckr6eOoYUBNIjWp6HCViqQeOuuOoAUfRP6ltNHXG9RVpu2TgjDNuBsn35SiW4u2rzFtRjKUnaf8TCNxvbvcAAAAASUVORK5CYII="
+}

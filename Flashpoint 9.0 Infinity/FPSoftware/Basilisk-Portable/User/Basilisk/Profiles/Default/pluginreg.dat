@@ -1,0 +1,140 @@
+Generated File. Do not edit.
+
+[HEADER]
+Version|0.18f|$
+Arch|x86-msvc|$
+
+[PLUGINS]
+nptcl31.dll|$
+F:\flashpoint\flashpoint\FPSoftware\BrowserPlugins\Tcl\nptcl31.dll|$
+3.0.0.1|$
+1180118737000|0|0|0|$
+Tcl Plugin 3.1.0 Executes Tclets.  See the <a href=http://www.tcl.tk/software/plugin/>Tcl Plugin</a> home page for more details.|$
+Tcl Plugin 3.1.0|$
+1
+0|application/x-tcl|Tcl|tcl|$
+NpCnc32.dll|$
+F:\flashpoint\flashpoint\FPSoftware\BrowserPlugins\Vitalize\Clickteam\Vitalize\v4\NpCnc32.dll|$
+4.0.254.0|$
+1586755358167|0|0|0|$
+Vitalize!|$
+Vitalize!|$
+2
+0|application/x-cnc|Multimedia Fusion|ccn|$
+1|application/x-tgf|Click & Create|ccn|$
+Npxgplugin.dll|$
+F:\flashpoint\flashpoint\FPSoftware\BrowserPlugins\SoundPlayback\Npxgplugin.dll|$
+5.0.0.68|$
+1577289112707|0|0|0|$
+MIDPLUG(TM) for XG ver1.01|$
+MIDPLUG for XG|$
+9
+0|audio/midi|MIDI|mid,midi|$
+1|audio/x-midi|MIDI|mid,midi|$
+2|audio/mid|MIDI|mid,midi|$
+3|audio/x-mid|MIDI|mid,midi|$
+4|audio/x-wav|WAVE|wav|$
+5|audio/wav|WAVE|wav|$
+6|audio/x-aiff|AIFF|aif,aiff|$
+7|audio/aiff|AIFF|aif,aiff|$
+8|audio/basic|AU|au|$
+npmod32.dll|$
+F:\flashpoint\flashpoint\FPSoftware\BrowserPlugins\SoundPlayback\npmod32.dll|$
+4.10.1.9|$
+1577289112770|0|0|0|$
+Module Plugin Library v1.91.05|$
+MOD Plugin|$
+8
+0|audio/x-mod|All Modules|mod,s3m,med,xm,it,mdz,itz,xmz,s3z|$
+1|audio/mod|ProTracker Modules|mod|$
+2|audio/x-zipped-mod|Zipped Modules|mdz|$
+3|audio/s3m|ScreamTracker Modules|s3m|$
+4|audio/x-s3m|ScreamTracker Modules|s3m|$
+5|audio/xm|FastTracker Modules|xm|$
+6|audio/x-zipped-it|Zipped IT Module|itz|$
+7|audio/it|Impulse Tracker Modules|it|$
+npsid.dll|$
+F:\flashpoint\flashpoint\FPSoftware\BrowserPlugins\SoundPlayback\npsid.dll|$
+1.0.0.1|$
+1577289112781|0|0|0|$
+SIDPLAY plug-in 1.2.15 for Win32, libsidplay 1.36.57|$
+  SIDPlug|$
+2
+0|audio/prs.sid|SID tunes|sid|$
+1|audio/x-sidtune|SID tunes|sid|$
+npctrl.dll|$
+F:\flashpoint\flashpoint\FPSoftware\BrowserPlugins\Silverlight\npctrl.dll|$
+5.1.50918.0|$
+1577289112637|0|0|0|$
+5.1.50918.0|$
+Silverlight Plug-In|$
+2
+0|application/x-silverlight|npctrl|scr|$
+1|application/x-silverlight-2|||$
+np32dsw.dll|$
+F:\flashpoint\flashpoint\FPSoftware\BrowserPlugins\Shockwave\Adobe\Director\np32dsw.dll|$
+12.3.5.205|$
+1586755276625|0|0|0|$
+Adobe Shockwave for Director Netscape plug-in, version 12.3.5.205|$
+Shockwave for Director|$
+1
+0|application/x-director|Shockwave Movie|dir,dxr,dcr|$
+nppopcaploader.dll|$
+F:\flashpoint\flashpoint\FPSoftware\BrowserPlugins\PopCapPlugin\nppopcaploader.dll|$
+1.0.0.2|$
+1588654068203|0|0|0|$
+PopCap Games Plugin|$
+PopCap Games Plugin|$
+2
+0|application/x-popcaploader;version=1.0.0.1|nppopcaploader||$
+1|application/x-popcaploader;version=1.0.0.2|||$
+npgobitgamesplugin.dll|$
+F:\flashpoint\flashpoint\FPSoftware\BrowserPlugins\GoBit\npgobitgamesplugin.dll|$
+1.0.0.1|$
+1592981896520|0|0|0|$
+GoBit Games Plugin|$
+GoBit Games Plugin|$
+3
+0|application/x-gobitgamesplugin;version=1.0.0.3|npgobitgamesplugin||$
+1|application/x-gobitgamesplugin;version=1.0.0.4|||$
+2|application/x-gobitgamesplugin;version=1.0.0.5|||$
+NPSWF32_32_0_0_270.dll|$
+F:\flashpoint\flashpoint\FPSoftware\BrowserPlugins\Flash\NPSWF32_32_0_0_270.dll|$
+32.0.0.270|$
+1577289110138|0|0|0|$
+Shockwave Flash 32.0 r0|$
+Shockwave Flash|$
+2
+0|application/x-shockwave-flash|Adobe Flash movie|swf|$
+1|application/futuresplash|FutureSplash movie|spl|$
+npburster.dll|$
+F:\flashpoint\flashpoint\FPSoftware\BrowserPlugins\Burster\npburster.dll|$
+1.58.0.0|$
+1380230448000|0|0|0|$
+The BursterPlugin allows you to view a 3D content in web pages. For more information, visit project website <a href=http://geta3d.com >geta3d.com</a>.|$
+Burster Plugin|$
+2
+0|application/x-burster|Plain Blender file|blend|$
+1|application/x-burster|Encrypted Blender file|blendz|$
+np32asw.dll|$
+F:\flashpoint\flashpoint\FPSoftware\BrowserPlugins\Authorware\np32asw.dll|$
+2004.0.0.1|$
+1577289109781|0|0|0|$
+Macromedia Authorware Web Player Netscape plug-in, version 2004 |$
+Authorware Web Player|$
+1
+0|application/x-authorware-map|Authorware|aam|$
+npvirtools.dll|$
+F:\flashpoint\flashpoint\FPSoftware\BrowserPlugins\3DVIAPlayer\npvirtools.dll|$
+5.0.0.20|$
+1577289109146|0|0|0|$
+3DVIA player(5.0.0.20).  For more information, visit the <a href="http://download.3dvia.com/software/3dvia-player/">3DVIA player</a> web site.|$
+3DVIA player|$
+3
+0|application/x-virtools|Virtools Composition|cmo|$
+1|application/x-nemo|Virtools Composition|cmo|$
+2|application/x-virtools|Virtools Web Player File|vmo|$
+
+[INVALID]
+F:\flashpoint\flashpoint\FPSoftware\BrowserPlugins\Silverlight\npctrlui.dll|$
+1577289112695|$

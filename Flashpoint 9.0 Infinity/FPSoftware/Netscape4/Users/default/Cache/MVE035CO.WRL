@@ -1,0 +1,67 @@
+#VRML V2.0 utf8
+Background{
+ skyColor 1 1 1
+}
+Transform{
+ children[
+  Inline{
+   url"gatya.wrl"
+  }
+ ]
+}
+Transform{
+ children[
+  Inline{
+   url"sita.wrl"
+  }
+ ]
+}
+Transform{
+ children[
+  Inline{
+   url"mimeu.wrl"
+  }
+ ]
+}
+Transform{
+ children[
+  Inline{
+   url"himeu.wrl"
+  }
+ ]
+}
+Transform{
+ children[
+  Inline{
+   url"mimesi.wrl"
+  }
+ ]
+}
+Transform{
+ children[
+  Inline{
+   url"himesi.wrl"
+  }
+ ]
+}
+Transform{
+ children[
+  Inline{
+   url"mimeku.wrl"
+  }
+ ]
+}
+Transform{
+ children[
+  Inline{
+   url"himeku.wrl"
+  }
+ ]
+}
+Transform{
+ children[
+  Inline{
+   url"haa.wrl"
+  }
+ ]
+}

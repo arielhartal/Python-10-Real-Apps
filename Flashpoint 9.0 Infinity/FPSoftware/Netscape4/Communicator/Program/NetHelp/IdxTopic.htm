@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--
+DESCRIPTION: Dynamically writes the links associated with each keyword.
+NOTES:
+-->
+
+<HEAD>
+
+<STYLE TYPE = 'text/javascript'>
+classes.keyword.all.fontFamily = 'arial';
+classes.keyword.all.fontSize = '13px';
+classes.keyword.all.marginTop = 4;
+classes.keyword.all.marginBottom = 4;
+</STYLE>
+
+<SCRIPT LANGUAGE = "JavaScript1.2">
+
+document.open()
+
+document.write( "<BODY BGCOLOR = '#ffffff' LINK = '#000066' ALINK = '#000066' VLINK = '#000066'>" )
+
+for ( var i = top.ToolFrame.startIndex; i <= top.ToolFrame.stopIndex; i++ ) {
+   var topicIndex = top.ToolFrame.topicIndices[ i ]
+
+   document.write( "<DIV CLASS = 'keyword'>" )
+   document.write( top.ToolFrame.topicStrings[ topicIndex ].link( top.ToolFrame.linkNames[ i ] ) )
+   document.write( "</DIV>" )
+}
+
+document.write( "</BODY>" )
+
+document.close()
+
+// Ping system to let know the Index topics page is displayed.
+top.SystemFrame.systemObj.idxTitlesUp()
+
+// Bind events to global event handlers.
+top.bindDocEvts( document )
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY></BODY>

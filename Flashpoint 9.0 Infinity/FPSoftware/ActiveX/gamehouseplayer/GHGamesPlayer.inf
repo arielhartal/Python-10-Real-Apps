@@ -1,0 +1,12 @@
+[Version]
+Signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+ghgamesplayer.dll=ghgamesplayer.dll
+
+[ghgamesplayer.dll]
+file-win32-x86=thiscab	
+clsid={74E4A24D-5224-4f05-8A41-99445E0FC22B}
+RegisterServer=yes
+FileVersion=2,0,0,1

@@ -1,0 +1,572 @@
+/*
+  ==Theme==
+  @name              Smoke
+  @version           0.1
+  @description       Inspired by the old Steam client.
+  @author            Obelisk
+  @launcher-version  alpha
+  ==/Theme==
+*/
+
+:root {
+  /* ------- Theme Variables ------- */
+  --smoke__text-color: #eeeeee;
+  --smoke__frame-outer-background: #4c5845;
+  --smoke__frame-inner-background: #3f4537;
+  --smoke__window-outline-bright-color: #7f8b76;
+  --smoke__window-outline-dark-color: #2e3726;
+  --smoke__general-medium: #414733;
+  --smoke__general-dark: #282f22;
+  --smoke__scroll-track-background: #59674c;
+  --smoke__scroll-button-background: #4a5643;
+  --smoke__scroll-button-background-hover: var(--smoke__frame-inner-background);
+  --smoke__scroll-button-background-active: var(--smoke__general-dark);
+  --smoke__game-item-shadow-color: #1a1b17;
+  /* ------- Theme Variables ------- */
+  /* Search bar */
+  --theme__search-bar__outline-color: var(--smoke__window-outline-bright-color);
+  --theme__search-bar__background-color: var(--smoke__frame-inner-background);
+  /* Game Items */
+  --theme__game-item__background-color-hover: var(--smoke__general-dark);
+  --theme__game-item__background-color-selected: var(--smoke__window-outline-dark-color);
+  --theme__game-item__background-color-selected-hover: var(--smoke__general-dark);
+  /* ------- Layout Variables ------- */
+  /* Confirm */
+  --layout__confirm-color: #5cb468;
+  /* Warning */
+  --layout__warning-dark-color:   #5a1010;
+  --layout__warning-medium-color: #731919;
+  --layout__warning-bright-color: #a22020;
+  /* Valid / Invalid */
+  --layout__valid-color:   #2d6f2d;
+  --layout__invalid-color: #772121;
+  /* Text Color */
+  --layout__primary-text-color:     var(--smoke__text-color);
+  --layout__secondary-text-color:   #aaaaaa;
+  --layout__highlighted-text-color: #ffffff;
+  --layout__disabled-text-color:    #9b9b9b;
+  /* Background */
+  --layout__primary-background:    var(--smoke__frame-inner-background);
+  --layout__secondary-background:  var(--smoke__frame-outer-background);
+  --layout__tertiary-background:   var(--smoke__frame-outer-background);
+  --layout__quaternary-background: var(--smoke__general-dark);
+  /* Outline Color */
+  --layout__primary-outline-color: var(--smoke__window-outline-dark-color);
+  /* Scrollbar */
+  --layout__scroll-thumb-color:        var(--smoke__scroll-button-background);
+  --layout__scroll-thumb-color-hover:  var(--smoke__scroll-button-background-hover);
+  --layout__scroll-thumb-color-active: var(--smoke__scroll-button-background-active);
+  /* Slider */
+  --layout__slider-background:        var(--smoke__frame-outer-background);
+  --layout__slider-background-hover:  var(--smoke__frame-inner-background);
+  --layout__slider-background-active: var(--smoke__general-dark);
+  /* Game Item */
+  --layout__game-item-color:                     var(--layout__secondary-text-color);
+  --layout__game-item-color-hover:               var(--layout__primary-text-color);
+  --layout__game-item-color-selected:            #cecece;
+  --layout__game-item-color-selected-hover:      var(--layout__game-item-color-hover);
+  --layout__game-list-item-background-even:      #394132; /* Only used in "list" mode. */
+  --layout__game-item-background-hover:          var(--smoke__general-dark);
+  --layout__game-item-background-selected:       var(--smoke__window-outline-dark-color);
+  --layout__game-item-background-selected-hover: var(--smoke__general-dark);
+  --layout__game-item-thumb-image-rendering:     normal; /* Used to set the "image-rendering" of the thumbnail. */
+  /* Browse Sidebar */
+  --layout__browse-sidebar-background:         var(--smoke__frame-inner-background);
+  --layout__browse-sidebar-divider-background: var(--smoke__frame-outer-background);
+  /* Playlist List */
+  --layout__playlist-list-item-even-background: inherit;
+  --layout__playlist-list-fake-even-background: inherit;
+  /* Misc */
+  --layout__title-bar-cross-color:          #eb4b4b;
+  --layout__no-theme-suggestion-color:      #bfbfbf;
+  --layout__footer-scale-slider-icon-color: #ffffff;
+}
+
+/* Input Checkbox */
+input[type=checkbox] {
+  --size: calc(12 / 16); /* (custom variable) */
+  width: calc(var(--size) * 1rem);
+  height: calc(var(--size) * 1rem);
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-appearance: none; /* Disable default visuals. */
+  /* Beveled Border */
+  border: 1px solid;
+  border-left-color: var(--smoke__window-outline-dark-color);
+  border-top-color: var(--smoke__window-outline-dark-color);
+  border-right-color: var(--smoke__window-outline-bright-color);
+  border-bottom-color: var(--smoke__window-outline-bright-color);
+}
+input[type=checkbox]:checked {
+  background-image: url('img/check.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+input[type=checkbox]:disabled {
+  background-color: inherit; /* Make the background "transparent" */
+}
+
+/* Window border */
+.root {
+  /* Beveled Border */
+  border: 1px solid;
+  border-left-color: var(--smoke__window-outline-bright-color);
+  border-top-color: var(--smoke__window-outline-bright-color);
+  border-right-color: var(--smoke__window-outline-dark-color);
+  border-bottom-color: var(--smoke__window-outline-dark-color);
+}
+
+/* Titlebar */
+.title-bar__title {
+  font-weight: bold;
+}
+.title-bar__button-bar__min {
+  background-image: url('img/min.png');
+}
+.title-bar__button-bar__max {
+  background-image: url('img/max.png');
+}
+.title-bar__button-bar__cross {
+  background-image: url('img/cross.png');
+}
+
+/* Border between main and the "outer window" */
+.main {
+  width: calc(100% - 16px);
+  margin-left: 8px;
+}
+.main > div:not(.log-page),
+.log-page__content {
+  /* Beveled Border */
+  border: 1px solid;
+  border-top-width: 0;
+  border-left-color: var(--smoke__window-outline-dark-color);
+  border-right-color: var(--smoke__window-outline-bright-color);
+  border-bottom-color: var(--smoke__window-outline-bright-color);
+}
+.main > div:not(.log-page),
+.log-page__content {
+  border-top: 1px solid var(--smoke__window-outline-dark-color);
+}
+
+/* Backgrounds */
+.main,
+.game-browser__center__inner {
+  background-position: center;
+  background-size: cover;
+}
+
+/* Sidebar Divider */
+.game-browser__sidebar__divider {
+  position: relative;
+  height: calc(100% + 2px);
+  margin-top: -1px;
+  /* Beveled Border */
+  border-left: 1px solid var(--smoke__window-outline-bright-color);
+  border-right: 1px solid var(--smoke__window-outline-dark-color);
+}
+
+/* Left Sidebar */
+.playlist-list-fake-item,
+.playlist-list-fake-item:hover {
+  --color: var(--layout__highlighted-text-color);
+}
+.playlist-list-fake-item,
+.playlist-list-item__head {
+  --color: var(--smoke__text-color);
+}
+.playlist-list-item,
+.playlist-list-item--editing .playlist-list-item__content {
+  --color: var(--layout__highlighted-text-color);
+}
+.playlist-list-item:hover,
+.playlist-list-item.playlist-list-item--drag-over,
+.playlist-list-fake-item:hover {
+  --color: var(--smoke__text-color);
+  background-color: var(--smoke__general-dark);
+}
+.playlist-list-item__content {
+  color: var(--smoke__text-color);
+}
+.playlist-list-item__content__inner {
+  background-color: var(--smoke__general-dark);
+  /* Beveled Border */
+  border-top: 1px solid var(--smoke__window-outline-dark-color);
+  border-bottom: 2px solid var(--smoke__window-outline-dark-color);
+}
+
+/* Right Sidebar */
+.game-image-split {
+  --inner-border-color: var(--smoke__window-outline-bright-color);
+  background-color: var(--smoke__frame-outer-background);
+}
+.browse-right-sidebar__row__screenshot__placeholder {
+  background-color: inherit;
+  /* Beveled Border */
+  border: 1px solid;
+  border-left-color: var(--smoke__window-outline-bright-color);
+  border-top-color: var(--smoke__window-outline-bright-color);
+  border-right-color: var(--smoke__window-outline-dark-color);
+  border-bottom-color: var(--smoke__window-outline-dark-color);
+}
+.browse-right-sidebar__additional-application {
+  background-color: var(--smoke__frame-outer-background);
+  padding: 0.4em;
+  /* Beveled Border */
+  border: 1px solid;
+  border-left-color: var(--smoke__window-outline-bright-color);
+  border-top-color: var(--smoke__window-outline-bright-color);
+  border-right-color: var(--smoke__window-outline-dark-color);
+  border-bottom-color: var(--smoke__window-outline-dark-color);
+}
+.browse-right-sidebar__additional-application:nth-child(2n) {
+  background-color: var(--smoke__frame-outer-background);
+}
+.browse-right-sidebar__additional-application:not(:last-child) {
+  margin-bottom: 0.3em;
+}
+.game-browser__sidebar__content .input-field--edit {
+  /* Beveled Border */
+  border: 1px solid;
+  border-left-color: var(--smoke__window-outline-dark-color);
+  border-top-color: var(--smoke__window-outline-dark-color);
+  border-right-color: var(--smoke__window-outline-bright-color);
+  border-bottom-color: var(--smoke__window-outline-bright-color);
+}
+
+/* Header */
+.header__menu__item {
+  /* Beveled Border */
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.header__menu__item:hover {
+  /* Beveled Border */
+  border: 1px solid;
+  border-left-color: var(--smoke__window-outline-dark-color);
+  border-top-color: var(--smoke__window-outline-dark-color);
+  border-right-color: var(--smoke__window-outline-bright-color);
+  border-bottom-color: var(--smoke__window-outline-bright-color);
+}
+
+/* Header Buttons */
+.header__menu__item__link {
+  font-weight: bold;
+}
+.header__menu__item__link:hover {
+  background-color: var(--smoke__frame-inner-background);
+}
+.header__menu__item__link,
+.header__menu__item__link:hover {
+  border: none;
+}
+
+/* Header Search */
+.header__search {
+  /* Beveled Border */
+  border: 1px solid;
+  border-left-color: var(--smoke__window-outline-dark-color);
+  border-top-color: var(--smoke__window-outline-dark-color);
+  border-right-color: var(--smoke__window-outline-bright-color);
+  border-bottom-color: var(--smoke__window-outline-bright-color);
+}
+
+/* Header Toggle-Sidebar */
+.header__toggle-sidebar {
+  --size: 1.38rem; /* Custom variable for this theme. "Magic number" that seems to  */
+  width: var(--size);
+  height: var(--size);
+  font-size: 0.1rem;
+  padding: 0.35em;
+  /* Beveled Border */
+  border: 1px solid;
+  border-left-color: var(--smoke__window-outline-bright-color);
+  border-top-color: var(--smoke__window-outline-bright-color);
+  border-right-color: var(--smoke__window-outline-dark-color);
+  border-bottom-color: var(--smoke__window-outline-dark-color);
+}
+
+/* Footer Slider */
+.footer__scale-slider__inner {
+  background-color: var(--smoke__frame-inner-background);
+  /* Beveled Border */
+  border: 1px solid;
+  border-radius: 0;
+  border-left-color: var(--smoke__window-outline-dark-color);
+  border-top-color: var(--smoke__window-outline-dark-color);
+  border-right-color: var(--smoke__window-outline-bright-color);
+  border-bottom-color: var(--smoke__window-outline-bright-color);
+}
+.footer__scale-slider__input::-webkit-slider-thumb {
+  box-shadow: none;
+  background-color: var(--layout__scroll-thumb-color);
+  height: 100%;
+  /* Beveled Border */
+  border: 1px solid;
+  border-radius: 0;
+  border-left-color: var(--smoke__window-outline-bright-color);
+  border-top-color: var(--smoke__window-outline-bright-color);
+  border-right-color: var(--smoke__window-outline-dark-color);
+  border-bottom-color: var(--smoke__window-outline-dark-color);
+}
+
+/* Home tab */
+.home-page__box {
+  border: none;
+  background: none;
+}
+.home-page__box__head {
+  background-color: var(--smoke__frame-outer-background);
+  width: fit-content;
+  position: relative;
+  margin-bottom: -1px;
+  /* Beveled Border */
+  border: 1px solid;
+  border-left-color: var(--smoke__window-outline-dark-color);
+  border-top-color: var(--smoke__window-outline-dark-color);
+  border-right-color: var(--smoke__window-outline-bright-color);
+  border-bottom: none;
+}
+.home-page__box__body {
+  background-color: var(--smoke__frame-outer-background);
+  /* Beveled Border */
+  border: 1px solid;
+  border-left-color: var(--smoke__window-outline-dark-color);
+  border-top-color: var(--smoke__window-outline-dark-color);
+  border-right-color: var(--smoke__window-outline-bright-color);
+  border-bottom-color: var(--smoke__window-outline-bright-color);
+}
+.home-page__box--extras span a {
+  background: none;
+}
+
+/* Logs Tab */
+.log-page__bar {
+  background-color: var(--smoke__frame-outer-background);
+}
+
+/* Config tab */
+.config-page input[type=checkbox] {
+  /* Scale it with the variable instead of "transform". */
+  transform: scale(1);
+  --size: (15 / 16);
+}
+.setting__body {
+  background-color: var(--smoke__frame-outer-background);
+  box-shadow: none;
+  /* Beveled Border */
+  border: 1px solid;
+  border-radius: 0;
+  border-left-color: var(--smoke__window-outline-dark-color);
+  border-top-color: var(--smoke__window-outline-dark-color);
+  border-right-color: var(--smoke__window-outline-bright-color);
+  border-bottom-color: var(--smoke__window-outline-bright-color);
+}
+.setting__row:not(:first-child) {
+  border-top-color: var(--smoke__window-outline-dark-color);
+}
+.setting__row__content--filepath-path .flashpoint-path__input {
+  /* Beveled Border */
+  border: 1px solid;
+  border-left-color: var(--smoke__window-outline-dark-color);
+  border-top-color: var(--smoke__window-outline-dark-color);
+  border-right-color: var(--smoke__window-outline-bright-color);
+  border-bottom-color: var(--smoke__window-outline-bright-color);
+}
+.setting__row__content--input-field .input-dropdown__input-field {
+  /* Beveled Border */
+  border: 1px solid;
+  border-left-color: var(--smoke__window-outline-dark-color);
+  border-top-color: var(--smoke__window-outline-dark-color);
+  border-right-color: var(--smoke__window-outline-bright-color);
+  border-bottom-color: var(--smoke__window-outline-bright-color);
+}
+.setting__row__content--input-field .input-dropdown__content {
+  /* Beveled Border */
+  border: 1px solid;
+  border-left-color: var(--smoke__window-outline-bright-color);
+  border-top: none;
+  border-right-color: var(--smoke__window-outline-dark-color);
+  border-bottom-color: var(--smoke__window-outline-dark-color);
+}
+
+/* About tab */
+.about-page__section__title {
+  padding-right: 0.4rem;
+  width: fit-content;
+  background-color: var(--smoke__frame-outer-background);
+  position: relative;
+  margin-bottom: -1px;
+  /* Beveled Border */
+  border: 1px solid;
+  border-left-color: var(--smoke__window-outline-dark-color);
+  border-top-color: var(--smoke__window-outline-dark-color);
+  border-right-color: var(--smoke__window-outline-bright-color);
+  border-bottom: none;
+}
+.about-page__section__content {
+  padding: 0.4rem;
+  background-color: var(--smoke__frame-outer-background);
+  /* Beveled Border */
+  border: 1px solid;
+  border-left-color: var(--smoke__window-outline-dark-color);
+  border-top-color: var(--smoke__window-outline-dark-color);
+  border-right-color: var(--smoke__window-outline-bright-color);
+  border-bottom-color: var(--smoke__window-outline-bright-color);
+}
+
+/* Developer Tab */
+.developer-page__log {
+  background-color: var(--smoke__general-medium);
+  /* Beveled Border */
+  border: 1px solid;
+  border-radius: 0;
+  border-left-color: var(--smoke__window-outline-dark-color);
+  border-top-color: var(--smoke__window-outline-dark-color);
+  border-right-color: var(--smoke__window-outline-bright-color);
+  border-bottom-color: var(--smoke__window-outline-bright-color);
+}
+
+/* Game Grid */
+.game-grid-item__thumb__image {
+  background-color: var(--smoke__general-medium);
+  box-shadow: 0px 2px 4px 0px var(--smoke__game-item-shadow-color);
+  /* Beveled Border */
+  border: 1px solid;
+  border-radius: 0;
+  border-left-color: var(--smoke__window-outline-bright-color);
+  border-top-color: var(--smoke__window-outline-bright-color);
+  border-right-color: var(--smoke__window-outline-dark-color);
+  border-bottom-color: var(--smoke__window-outline-dark-color);
+}
+
+/* Simple Button */
+.simple-button:hover {
+  background-color: var(--smoke__frame-inner-background);
+}
+.simple-button,
+.simple-button:hover {
+  /* Beveled Border */
+  border: 1px solid;
+  border-left-color: var(--smoke__window-outline-bright-color);
+  border-top-color: var(--smoke__window-outline-bright-color);
+  border-right-color: var(--smoke__window-outline-dark-color);
+  border-bottom-color: var(--smoke__window-outline-dark-color);
+}
+
+/* Simple Input */
+.simple-input {
+  background-color: var(--smoke__general-dark);
+}
+
+/* Checkbox Dropdown */
+
+/* Simple Selector */
+.simple-selector {
+  /* Beveled Border */
+  border: 1px solid;
+  border-left-color: var(--smoke__window-outline-dark-color);
+  border-top-color: var(--smoke__window-outline-dark-color);
+  border-right-color: var(--smoke__window-outline-bright-color);
+  border-bottom-color: var(--smoke__window-outline-bright-color);
+}
+
+/* Simple Scroll(bar) */
+.simple-scroll {
+  --scrollbar-size: 1rem;
+}
+.simple-scroll::-webkit-scrollbar {
+  width: var(--scrollbar-size);
+  height: var(--scrollbar-size);
+}
+.simple-scroll::-webkit-scrollbar-button {
+  width: var(--scrollbar-size);
+  height: var(--scrollbar-size);
+  background-color: var(--smoke__scroll-button-background);
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* Beveled Border */
+  border: 1px solid;
+  border-left-color: var(--smoke__window-outline-bright-color);
+  border-top-color: var(--smoke__window-outline-bright-color);
+  border-right-color: var(--smoke__window-outline-dark-color);
+  border-bottom-color: var(--smoke__window-outline-dark-color);
+}
+::-webkit-scrollbar-button:single-button:hover {
+  background-color: var(--smoke__scroll-button-background-hover);
+}
+::-webkit-scrollbar-button:single-button:active {
+  background-color: var(--smoke__scroll-button-background-active);
+}
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  background-image: url('img/scroll_up.png');
+}
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  background-image: url('img/scroll_down.png');
+}
+::-webkit-scrollbar-button:single-button:horizontal:decrement {
+  background-image: url('img/scroll_left.png');
+}
+::-webkit-scrollbar-button:single-button:horizontal:increment {
+  background-image: url('img/scroll_right.png');
+}
+.simple-scroll::-webkit-scrollbar-corner {
+  width: var(--scrollbar-size);
+  height: var(--scrollbar-size);
+}
+.simple-scroll::-webkit-scrollbar-track {
+  box-shadow: none;
+  background-color: var(--smoke__scroll-track-background);
+  border-radius: 0;
+}
+.simple-scroll::-webkit-scrollbar-thumb {
+  box-shadow: none;
+  /* Beveled Border */
+  border: 1px solid;
+  border-radius: 0;
+  border-left-color: var(--smoke__window-outline-bright-color);
+  border-top-color: var(--smoke__window-outline-bright-color);
+  border-right-color: var(--smoke__window-outline-dark-color);
+  border-bottom-color: var(--smoke__window-outline-dark-color);
+}
+
+/* Checkbox Dropdown */
+.checkbox-dropdown__select-box {
+  /* Beveled Border */
+  border: 1px solid;
+  border-left-color: var(--smoke__window-outline-dark-color);
+  border-top-color: var(--smoke__window-outline-dark-color);
+  border-right-color: var(--smoke__window-outline-bright-color);
+  border-bottom-color: var(--smoke__window-outline-bright-color);
+}
+.checkbox-dropdown__content {
+  /* Beveled Border */
+  border: 1px solid;
+  border-left-color: var(--smoke__window-outline-dark-color);
+  border-top-color: var(--smoke__window-outline-dark-color);
+  border-right-color: var(--smoke__window-outline-bright-color);
+  border-bottom-color: var(--smoke__window-outline-bright-color);
+}
+
+/* Input Dropdown */
+.input-dropdown__input-field {
+  background-color: var(--smoke__general-dark);
+  border: none;
+}
+.input-dropdown__input-field__button {
+  /* Beveled Border */
+  border: 1px solid;
+  border-left-color: var(--smoke__window-outline-bright-color);
+  border-top-color: var(--smoke__window-outline-bright-color);
+  border-right-color: var(--smoke__window-outline-dark-color);
+  border-bottom-color: var(--smoke__window-outline-dark-color);
+}
+.input-dropdown__input-field__input {
+  background-color: var(--smoke__general-dark);
+}
+.input-dropdown__content {
+  /* Beveled Border */
+  border: 1px solid;
+  border-left-color: var(--smoke__window-outline-bright-color);
+  border-top-color: var(--smoke__window-outline-bright-color);
+  border-right-color: var(--smoke__window-outline-dark-color);
+  border-bottom-color: var(--smoke__window-outline-dark-color);
+}

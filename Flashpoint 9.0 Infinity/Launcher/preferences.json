@@ -1,0 +1,31 @@
+{
+  "browsePageShowExtreme": false,
+  "enableEditing": false,
+  "fallbackLanguage": "en",
+  "currentLanguage": "<auto>",
+  "browsePageLayout": 0,
+  "browsePageShowLeftSidebar": true,
+  "browsePageShowRightSidebar": true,
+  "showDeveloperTab": false,
+  "currentTheme": "Metal",
+  "currentLogoSet": "",
+  "lastSelectedLibrary": "arcade",
+  "gamesOrderBy": "dateAdded",
+  "gamesOrder": "ASC",
+  "defaultLibrary": "arcade",
+  "saveImportedCurations": true,
+  "keepArchiveKey": true,
+  "symlinkCurationContent": false,
+  "onDemandImages": true,
+  "showLogSource": {},
+  "showLogLevel": {
+    "0": false,
+    "1": false,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true
+  },
+  "excludedRandomLibraries": [],
+  "appPathOverrides": []
+}

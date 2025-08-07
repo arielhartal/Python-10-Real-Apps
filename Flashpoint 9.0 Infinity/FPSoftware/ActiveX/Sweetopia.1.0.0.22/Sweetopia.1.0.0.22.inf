@@ -1,0 +1,13 @@
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+Sweetopia.1.0.0.22.dll=Sweetopia.1.0.0.22.dll
+
+[Sweetopia.1.0.0.22.dll]
+file-win32-x86=thiscab
+clsid={FC4CAF5F-91BD-4dd9-ADC1-F3C737E37BC4}
+FileVersion=1,0,0,22
+RegisterServer=yes
+

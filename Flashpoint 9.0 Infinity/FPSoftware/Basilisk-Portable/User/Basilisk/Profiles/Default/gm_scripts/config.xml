@@ -1,0 +1,6 @@
+<UserScriptConfig>
+	<Script author="Flashpoint" basedir="SWFEmbed" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="try to take over the world!" enabled="true" filename="SWFEmbed.user.js" installTime="1580788795620" modified="1580864783212" name="SWFEmbed" namespace="http://tampermonkey.net/" noframes="false" runAt="document-start" updateMetaStatus="unknown" userOverride="false" uuid="8c8429da-62d2-4883-830a-a91bebd4f82a" version="0.1" updateurl="null">
+		<Grant>none</Grant>
+		<Match>http://*/*.swf*</Match>
+	</Script>
+</UserScriptConfig>

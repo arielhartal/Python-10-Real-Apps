@@ -1,0 +1,13 @@
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+GreatChocolateChaseWeb.1.0.0.12.dll=GreatChocolateChaseWeb.1.0.0.12.dll
+
+[GreatChocolateChaseWeb.1.0.0.12.dll]
+file-win32-x86=thiscab
+clsid={6C7CAD20-85AA-475A-AC0D-303C4A9A69CE}
+FileVersion=1,0,0,12
+RegisterServer=yes
+

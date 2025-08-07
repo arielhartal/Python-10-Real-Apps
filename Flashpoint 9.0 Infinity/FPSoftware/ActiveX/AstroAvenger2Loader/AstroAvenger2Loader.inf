@@ -1,0 +1,14 @@
+ Version signature (same for both NT and Win95) -- do not remove
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+AstroAvenger2Loader.ocx=AstroAvenger2Loader.ocx
+
+[AstroAvenger2Loader.ocx]
+file-win32-x86=thiscab
+clsid={63C1D14E-8DF7-4855-BDBE-E03FC8731408}
+FileVersion=1,0,0,2
+RegisterServer=yes
+

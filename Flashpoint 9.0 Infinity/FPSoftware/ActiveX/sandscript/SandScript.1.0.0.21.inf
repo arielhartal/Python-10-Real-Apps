@@ -1,0 +1,13 @@
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+SandScript.1.0.0.21.dll=SandScript.1.0.0.21.dll
+
+[SandScript.1.0.0.21.dll]
+file-win32-x86=thiscab
+clsid={D410AFBD-4E26-4d5f-840F-0412D6F6BB8D}
+FileVersion=1,0,0,21
+RegisterServer=yes
+

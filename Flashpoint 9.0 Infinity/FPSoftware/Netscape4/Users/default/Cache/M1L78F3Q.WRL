@@ -1,0 +1,228 @@
+#VRML V2.0 utf8
+
+Background{
+    skyColor 1 1 1
+}
+
+Shape{
+  appearance Appearance{
+   texture ImageTexture{
+    url "arm1.ue.jpg"
+}
+
+}
+
+geometry IndexedFaceSet{
+    coord Coordinate{
+      point[
+  0.06 0 0.06,
+  0.07 0 -0.06,
+  -0.06 0 0.06,
+  -0.07 0 -0.06,
+  0.06 -0.3 0.06,
+  0.07 -0.3 -0.06,
+  -0.06 -0.3 0.06,
+  -0.07 -0.3 -0.06
+  ]
+}
+
+
+coordIndex[
+  
+  0,4,6,2,-1,
+ 
+]
+
+solid FALSE
+
+}
+}
+
+
+
+
+
+Shape{
+  appearance Appearance{
+   texture ImageTexture{
+    url "arm2.ue.jpg"
+}
+     material Material{
+  }
+}
+
+geometry IndexedFaceSet{
+    coord Coordinate{
+      point[
+  0.06 0 0.06,
+  0.07 0 -0.06,
+  -0.06 0 0.06,
+  -0.07 0 -0.06,
+  0.06 -0.3 0.06,
+  0.07 -0.3 -0.06,
+  -0.06 -0.3 0.06,
+  -0.07 -0.3 -0.06
+  ]
+}
+
+
+coordIndex[
+
+  5,4,0,1,-1,
+
+ 
+]
+
+solid FALSE
+
+}
+}
+
+Shape{
+  appearance Appearance{
+   texture ImageTexture{
+    url "arm2.ue.jpg"
+}
+     material Material{
+  }
+}
+
+geometry IndexedFaceSet{
+    coord Coordinate{
+      point[
+  0.06 0 0.06,
+  0.07 0 -0.06,
+  -0.06 0 0.06,
+  -0.07 0 -0.06,
+  0.06 -0.3 0.06,
+  0.07 -0.3 -0.06,
+  -0.06 -0.3 0.06,
+  -0.07 -0.3 -0.06
+  ]
+}
+
+
+coordIndex[
+
+  
+  5,7,3,1,-1,
+
+ 
+]
+
+solid FALSE
+
+}
+}
+
+Shape{
+  appearance Appearance{
+   texture ImageTexture{
+    url "arm2.ue.jpg"
+}
+     material Material{
+  }
+}
+
+geometry IndexedFaceSet{
+    coord Coordinate{
+      point[
+  0.06 0 0.06,
+  0.07 0 -0.06,
+  -0.06 0 0.06,
+  -0.07 0 -0.06,
+  0.06 -0.3 0.06,
+  0.07 -0.3 -0.06,
+  -0.06 -0.3 0.06,
+  -0.07 -0.3 -0.06
+  ]
+}
+
+
+coordIndex[
+
+
+  0,2,3,1,-1,
+ 
+ 
+]
+
+solid FALSE
+
+}
+}
+
+
+Shape{
+  appearance Appearance{
+   texture ImageTexture{
+    url "arm2.ue.jpg"
+}
+     material Material{
+  }
+}
+
+geometry IndexedFaceSet{
+    coord Coordinate{
+      point[
+  0.06 0 0.06,
+  0.07 0 -0.06,
+  -0.06 0 0.06,
+  -0.07 0 -0.06,
+  0.06 -0.3 0.06,
+  0.07 -0.3 -0.06,
+  -0.06 -0.3 0.06,
+  -0.07 -0.3 -0.06
+  ]
+}
+
+
+coordIndex[
+
+ 
+  2,3,7,6,-1,
+ 
+ 
+]
+
+solid FALSE
+
+}
+}
+
+Shape{
+  appearance Appearance{
+   texture ImageTexture{
+    url "arm2.ue.jpg"
+}
+     material Material{
+  }
+}
+
+geometry IndexedFaceSet{
+    coord Coordinate{
+      point[
+  0.06 0 0.06,
+  0.07 0 -0.06,
+  -0.06 0 0.06,
+  -0.07 0 -0.06,
+  0.06 -0.3 0.06,
+  0.07 -0.3 -0.06,
+  -0.06 -0.3 0.06,
+  -0.07 -0.3 -0.06
+  ]
+}
+
+
+coordIndex[
+
+ 
+  4,6,7,5,-1
+ 
+]
+
+solid FALSE
+
+}
+}
+

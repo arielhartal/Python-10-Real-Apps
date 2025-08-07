@@ -1,0 +1,62 @@
+{
+  "watch": [
+    "<fpPath>/Legacy/logs/access.log"
+  ],
+  "server": [
+    {
+      "name": "PHP Router",
+      "path": "Legacy",
+      "filename": "php",
+      "arguments": ["-S", "127.0.0.1:22500", "router.php"],
+      "kill": true
+    },
+    {
+      "name": "MAD4FP Mode",
+      "path": "Legacy",
+      "filename": "php",
+      "arguments": ["-S", "127.0.0.1:22500", "router_mad4fp.php"],
+      "kill": true,
+      "mad4fp": true
+    },
+    {
+      "name": "Apache Webserver",
+      "path": "Server",
+      "filename": "qemu-system-i386.exe",
+      "arguments": ["-m", "512", "-net", "nic,model=e1000", "-net", "user,hostfwd=tcp:127.0.0.1:22500-:80", "-qmp", "tcp:127.0.0.1:4444,server,nowait", "-hda", "alpine.qcow2", "-serial", "stdio", "-loadvm", "quick", "-display", "none"],
+      "kill": true
+    }
+  ],
+  "daemon": [
+    {
+      "name": "Legacy Webserver",
+      "path": "Legacy",
+      "filename": "httpd",
+      "arguments": ["-f", "<fpPath>/Legacy/conf/httpd.conf", "-X"],
+      "kill": true
+    }
+  ],
+  "start": [
+    {
+      "path": "Legacy",
+      "filename": "php",
+      "arguments": ["-f", "update_httpdconf_main_dir.php"]
+    }
+  ],
+  "stop": [
+    {
+      "path": "Legacy",
+      "filename": "php",
+      "arguments": ["-f", "reset_httpdconf_main_dir.php"]
+    },
+    {
+      "path": "FPSoftware/Redirector",
+      "filename": "Redirect.exe",
+      "arguments": ["/close"]
+    },
+    {
+      "path": "FPSoftware/Fiddler2Portable/App/Fiddler",
+      "filename": "ExecAction.exe",
+      "arguments": ["quit"]
+    }
+  ]
+}

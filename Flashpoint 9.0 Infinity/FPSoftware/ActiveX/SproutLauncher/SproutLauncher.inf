@@ -1,0 +1,12 @@
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+SproutWebLauncher.dll=SproutWebLauncher.dll
+
+[SproutWebLauncher.dll]
+file-win32-x86=thiscab
+clsid={D54160C3-DB7B-4534-9B65-190EE4A9C7F7}
+RegisterServer=yes
+FileVersion=1,0,0,10

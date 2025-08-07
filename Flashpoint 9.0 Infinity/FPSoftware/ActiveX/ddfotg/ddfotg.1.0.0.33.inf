@@ -1,0 +1,13 @@
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+ddfotg.1.0.0.33.dll=ddfotg.1.0.0.33.dll
+
+[ddfotg.1.0.0.33.dll]
+file-win32-x86=thiscab
+clsid={BAE1D8DF-0B35-47e3-A1E7-EEB3FF2ECD19}
+FileVersion=1,0,0,33
+RegisterServer=yes
+

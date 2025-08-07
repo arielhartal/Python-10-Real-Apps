@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<complist>
+	<comp name="core">
+		<file>pcos224</file>
+		<minvers>5.2.0.10532</minvers>
+		<maxvers>5.2.0.99999</maxvers>
+		<mincore>5.2.0.10532</mincore>
+		<maxcore>5.2.0.99999</maxcore>
+		<license>no</license>
+		<descr>Pulse Player Core</descr>
+	</comp>
+	<!--  For now, don't include the OpenGL renderer on the PC
+	      Uncomment this if you want to test the OpenGL renderer
+		  Removing DX8 renderer from list of supported renderers
+	<comp name="render.hw.ogl">
+		<file>gl32002w</file>
+		<minvers>5.2.0.10532</minvers>
+		<maxvers>5.2.0.99999</maxvers>
+		<mincore>5.2.0.10532</mincore>
+		<maxcore>5.2.0.99999</maxcore>
+		<license>no</license>
+		<descr>Open-GL Renderer</descr>
+		<copyright>Copyright (c) 2001 Pulse Entertainment, Inc.</copyright>
+	</comp>
+	<comp name="render.hw.dx8">
+		<file>dx8001w</file>
+		<minvers>5.2.0.10532</minvers>
+		<maxvers>5.2.0.99999</maxvers>
+		<mincore>5.2.0.10532</mincore>
+		<maxcore>5.2.0.99999</maxcore>
+		<license>no</license>
+		<descr>DirectX 8 Renderer</descr>
+		<copyright>Copyright (c) 2002 Pulse Entertainment, Inc.</copyright>
+		<args>
+		4098.21062+0+0.0.0
+		4098.20804+0+0.0.0
+		4098.20823+0+0.0.0
+		4098.20812+0+0.0.0
+		4318.32+0+0.0.0
+		4318.40+0+0.0.0
+		4318.256+0+0.0.0
+		4318.259+0+0.0.0
+		4318.272+0+0.0.0
+		4318.336+0+0.0.0
+		4318.512+0+0.0.0
+		</args>
+	</comp>
+	-->
+	<comp name="render.hw.dx">
+		<file>dx32002w</file>
+		<minvers>5.2.0.10532</minvers>
+		<maxvers>5.2.0.99999</maxvers>
+		<mincore>5.2.0.10532</mincore>
+		<maxcore>5.2.0.99999</maxcore>
+		<license>no</license>
+		<descr>DirectX 6 Renderer</descr>
+		<copyright>Copyright (c) 2002 Pulse Entertainment, Inc.</copyright>
+	</comp>
+	<comp name="render.sw.32">
+		<file>zr32002w</file>
+		<minvers>5.2.0.10532</minvers>
+		<maxvers>5.2.0.99999</maxvers>
+		<mincore>5.2.0.10532</mincore>
+		<maxcore>5.2.0.99999</maxcore>
+		<license>no</license>
+		<descr>Software Renderer</descr>
+		<copyright>Copyright (c) 2001 Pulse Entertainment, Inc.</copyright>
+	</comp>
+	<comp name="lipsync">
+		<file>lips002w</file>
+		<minvers>5.2.0.10532</minvers>
+		<maxvers>5.2.0.99999</maxvers>
+		<mincore>5.2.0.10532</mincore>
+		<maxcore>5.2.0.99999</maxcore>
+		<license>no</license>
+		<descr>Real-time LipSync engine</descr>
+		<copyright>Copyright (c) 2001 Pulse Entertainment, Inc.
+Lip Synchronization Technology (c) 1992-2000 Kevin Erler, All Rights Reserved.</copyright>
+	</comp>
+	<comp name="fontfusion">
+		<file>fontfusion001w</file>
+		<minvers>5.2.0.10532</minvers>
+		<maxvers>5.2.0.99999</maxvers>
+		<mincore>5.2.0.10532</mincore>
+		<maxcore>5.2.0.99999</maxcore>
+		<license>no</license>
+		<descr>FontFusion text engine</descr>
+		<copyright>Copyright (c) 2001 Pulse Entertainment, Inc.</copyright>
+	</comp>
+	<comp name="jpeg">
+		<file>jpeg001w</file>
+		<minvers>5.2.0.10532</minvers>
+		<maxvers>5.2.0.99999</maxvers>
+		<mincore>5.2.0.10532</mincore>
+		<maxcore>5.2.0.99999</maxcore>
+		<license>no</license>
+		<descr>JPEG decompression</descr>
+		<copyright>Copyright (c) 2002 Pulse Entertainment, Inc.
+This software is based in part on the work of the Independent JPEG Group.</copyright>
+	</comp>
+	<comp name="mp3">
+		<file>mp3001w</file>
+		<minvers>5.2.0.10532</minvers>
+		<maxvers>5.2.0.99999</maxvers>
+		<mincore>5.2.0.10532</mincore>
+		<maxcore>5.2.0.99999</maxcore>
+		<license>no</license>
+		<descr>MP3 decompression</descr>
+		<copyright>Copyright (c) 2002 Pulse Entertainment, Inc.
+Xaudio MPEG Audio Engine (c) 1996-1999 by MpegTV, LLC, all rights reserved.
+MPEG Layer-3 audio compression technology licensed by Fraunhofer IIS and THOMSON multimedia.</copyright>
+	</comp>
+</complist>

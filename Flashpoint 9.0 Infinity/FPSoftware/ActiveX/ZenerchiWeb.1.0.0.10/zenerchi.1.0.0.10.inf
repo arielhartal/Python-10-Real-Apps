@@ -1,0 +1,13 @@
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+zenerchi.1.0.0.10.dll=zenerchi.1.0.0.10.dll
+
+[zenerchi.1.0.0.10.dll]
+file-win32-x86=thiscab
+clsid={BAC761D3-DFFD-4db4-A01D-173346E090A7}
+FileVersion=1,0,0,10
+RegisterServer=yes
+

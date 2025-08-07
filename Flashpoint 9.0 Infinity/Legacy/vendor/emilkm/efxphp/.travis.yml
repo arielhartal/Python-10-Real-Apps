@@ -1,0 +1,17 @@
+dist: trusty
+
+language: C
+
+env:
+    - PHP_VERSION=7.1.14
+
+matrix:
+    fast_finish: true
+
+script:
+    - ./.travis/travis.sh
+
+cache:
+  directories:
+    - $HOME/build/emilkm/php-$PHP_VERSION
+

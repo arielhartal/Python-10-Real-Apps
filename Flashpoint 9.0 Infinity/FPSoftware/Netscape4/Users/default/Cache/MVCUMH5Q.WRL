@@ -1,0 +1,217 @@
+#VRML V2.0 utf8
+Background{
+	skyColor 1 1 1
+}
+DEF Doutai Transform{
+	translation 0 0 0
+		children[
+
+Inline{
+   url "1.30.doutai.wrl"
+   }
+  ]
+}
+
+DEF Ketu Transform{
+	translation 0 -0.29 0
+		children[
+Inline{
+   url "1.30.ketu.wrl"
+  }
+ ]
+}
+ 
+DEF Head Transform{
+	translation 0 0.55 0 
+		children[
+Inline{
+    url "1.30.head.wrl"
+    }
+  ]
+}
+
+DEF Armright Transform{
+	translation -0.32 0.5 0
+		children[
+			Inline{
+      				url "1.30.arm.ue.wrl"
+				}
+	Transform{
+		translation 0 -0.52 0
+		children[
+			Inline{
+      				url "1.30.arm.sita.wrl"
+				}
+	Transform{
+		translation 0 -0.13 0
+		children[
+			Inline{
+      				url "1.30.kobusi.wrl"
+				}
+			]
+		}
+	]
+    }
+  ]
+}
+
+DEF Armleft Transform{
+	translation 0.32 0.5 0
+		children[
+			Inline{
+      				url "1.30.arm.ue.wrl"
+				}
+	Transform{
+		translation 0 -0.52 0
+		children[
+			Inline{
+      				url "1.30.arm.sita.wrl"
+				}
+	Transform{
+		translation 0 -0.13 0
+		children[
+			Inline{
+      				url "1.30.kobusi.wrl"
+				}
+			]
+		}
+	]
+    }
+  ]
+}
+
+DEF Asiright Transform{
+	translation -0.12 -0.31 0
+		children[
+			Inline{
+      				url "1.30.hutomomo.wrl"
+				}
+			Transform{
+			translation 0 -0.54 0
+		children[
+			Inline{
+      				url "1.30.momo.wrl"
+				}
+			Transform{
+				translation 0 -0.11 0.07
+		children[
+			Inline{
+      				url "1.30.asi.wrl"
+				}
+			]
+		}
+	]
+    }
+  ]
+}
+
+DEF Asileft Transform{
+	translation 0.12 -0.31 0
+		children[
+			Inline{
+      				url "1.30.hutomomo.wrl"
+				}
+			Transform{
+			translation 0 -0.54 0
+		children[
+			Inline{
+      				url "1.30.momo.wrl"
+				}
+			Transform{
+				translation 0 -0.11 0.07
+		children[
+			Inline{
+      				url "1.30.asi.wrl"
+				}
+			]
+		}
+	]
+    }
+  ]
+}
+
+DEF OriInterpolator OrientationInterpolator{
+  key[ 0, 0.25, 0.5, 0.75, 1 ]
+    keyValue[
+    1 0 0 -0.75,
+    1 0 0  0,
+    1 0 0  0.75,
+    1 0 0  0,
+    1 0 0 -0.75
+  ]
+    }
+
+      
+DEF MyTimer TimeSensor{
+  cycleInterval 6
+    loop TRUE
+    }
+
+ROUTE MyTimer.fraction_changed TO OriInterpolator.set_fraction
+ROUTE OriInterpolator.value_changed TO Armright.set_rotation
+
+
+DEF OriInterpolator OrientationInterpolator{
+  key[ 0, 0.25, 0.5, 0.75, 1 ]
+    keyValue[
+    1 0 0  0.75,
+    1 0 0  0,
+    1 0 0  -0.75,
+    1 0 0  0,
+    1 0 0  0.75
+  ]
+    }
+
+      
+DEF MyTimer TimeSensor{
+  cycleInterval 6
+    loop TRUE
+    }
+
+ROUTE MyTimer.fraction_changed TO OriInterpolator.set_fraction
+ROUTE OriInterpolator.value_changed TO Armleft.set_rotation
+
+DEF OriInterpolator OrientationInterpolator{
+  key[ 0, 0.25, 0.5, 0.75, 1 ]
+    keyValue[
+    1 0 0 -0.75,
+    1 0 0  0,
+    1 0 0  0.75,
+    1 0 0  0,
+    1 0 0 -0.75
+  ]
+    }
+
+      
+DEF MyTimer TimeSensor{
+  cycleInterval 6
+    loop TRUE
+    }
+
+ROUTE MyTimer.fraction_changed TO OriInterpolator.set_fraction
+ROUTE OriInterpolator.value_changed TO Asileft.set_rotation
+
+
+DEF OriInterpolator OrientationInterpolator{
+  key[ 0, 0.25, 0.5, 0.75, 1 ]
+    keyValue[
+    1 0 0  0.75,
+    1 0 0  0,
+    1 0 0  -0.75,
+    1 0 0  0,
+    1 0 0  0.75
+  ]
+    }
+
+      
+DEF MyTimer TimeSensor{
+  cycleInterval 6
+    loop TRUE
+    }
+
+ROUTE MyTimer.fraction_changed TO OriInterpolator.set_fraction
+ROUTE OriInterpolator.value_changed TO Asiright.set_rotation
+
+
+
+

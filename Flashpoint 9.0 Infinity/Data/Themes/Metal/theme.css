@@ -1,0 +1,270 @@
+/*
+	==Theme==
+	@name              Metal
+	@version           2.3.1
+	@description       ok
+	@author            Wumbo
+	@launcher-version  9.0.3
+	==/Theme==
+*/
+
+:root {
+	--layout__primary-background:                    #1b1b1d;
+	--layout__secondary-background:                  #2d2d2f;
+	--layout__tertiary-background:                   #141416;
+	--layout__quaternary-background:                 #242426;
+	--layout__game-item-background-hover:            #414143;
+	--layout__game-item-background-selected:         #616163;
+	--layout__game-item-background-selected-hover:   #717173;
+	--layout__drop-down-content-background-selected: var(--layout__game-item-background-selected-hover);
+}
+.simple-center__vertical-inner {
+	margin-right: 0.1em;
+}
+.simple-button {
+	height: 20px;
+	font-size: 14px;
+	background-color: var(--layout__secondary-background);
+	border-color: var(--layout__tertiary-background);
+	border-radius: 4px;
+	padding: 0px 4px;
+	box-shadow: 0px 1px 0px 0px #08080a;
+}
+.simple-button:hover {
+	background-color: var(--layout__simple-button-background);
+	border-color: var(--layout__tertiary-background);
+}
+.simple-button:active {
+	background-color: var(--layout__primary-background);
+	box-shadow: 0px -1px 0px 0px #09090a;
+}
+.simple-selector,
+.simple-dropdown__select-box {
+	background: linear-gradient(to bottom, #434345, #262628);
+	border-color: #262628;
+}
+.simple-selector option {
+	background-color: var(--layout__primary-background);
+}
+.simple-dropdown__select-box {
+	cursor: default;
+	text-align: left;
+	padding-left: 0.2em;
+}
+.input-dropdown__input-field {
+	border: none !important;
+}
+.input-dropdown__input-field__button {
+	box-shadow: 0px 0.5px 2px 1px #2a2a2c inset;
+}
+.simple-input {
+	height: 1.3em;
+	background-color: #323234;
+	box-shadow: 0px 0.5px 2px 1px #2a2a2c inset;
+	padding-left: 0.2em;
+}
+.tag-input-dropdown__content {
+	margin-top: 0.021em;
+}
+.tag-icon {
+	margin: 0.1em 0.3em 0em 0em;
+}
+.input-field--warn {
+	background-color: var(--layout__warning-shallow) !important;
+}
+.simple-scroll::-webkit-scrollbar-track {
+	display: none;
+}
+.simple-scroll::-webkit-scrollbar-thumb {
+	box-shadow: inset 0px 0px 4px 0px #00000088;
+}
+.main, 
+.game-browser {
+	background-image: radial-gradient(circle farthest-corner at 50% 20%, #313133, #1b1b1d);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.footer,
+.game-browser__sidebar,
+.playlist-list-item,
+.playlist-list-fake-item {
+	background-color: var(--layout__primary-background);
+}
+.title-bar {
+	background: linear-gradient(to bottom, var(--layout__secondary-background), #242426);
+}
+.title-bar__title {
+	margin-left: 2px;
+}
+.title-bar__button-bar__min {
+	background-image: url('images/min.png');
+}
+.title-bar__button-bar__max {
+	background-image: url('images/max.png');
+}
+.title-bar__button-bar__cross {
+	background-image: url('images/cross.png');
+}
+.title-bar__button-bar__min:hover,
+.title-bar__button-bar__max:hover {
+	background-color: #87878944;
+}
+.title-bar__button-bar__cross:hover {
+	background-color: #ff4444cc;
+}
+.header {
+	background: linear-gradient(to bottom, #242426, var(--layout__primary-background));
+}
+.header__menu__item__link:hover {
+	background: #00000000;
+	border-color: #00000000;
+	text-shadow: 0px 0px 5px #98989a, 0px 0px 10px #98989a, 0px 0px 15px #98989a, 0px 0px 20px #98989a;
+}
+/*
+.header__menu__item__link:active {
+	background: #00000000;
+	border-color: #00000000;
+	text-shadow: 0px 0px 5px #ffffff, 0px 0px 10px #ffffff, 0px 0px 15px #ffffff, 0px 0px 20px #ffffff;
+}
+*/
+.header__search {
+	background-color: #323234;
+	border: 0px;
+	padding: 0.1em 0em 0.1em 0.2em;
+	box-shadow: 0px 0.5px 2px 1px #2a2a2c inset;
+}
+.icon {
+	opacity: 0.8;
+}
+.icon--magnifying-glass {
+	opacity: 0.3;
+}
+.footer__wrap {
+	padding-left: 2px;
+}
+.footer__scale-slider__inner {
+	box-shadow: 0px 0px 4px 1px #212123 inset;
+	margin-right: 5px;
+}
+.home-page__box,
+.curate-page__floating-box,
+.curate-box,
+.developer-page__log,
+.service-box {
+	background-color: var(--layout__quaternary-background);
+	border-color: var(--layout__tertiary-background);
+	box-shadow: 0px 2px 4px 0px #09090a;
+	border-radius: 4px;
+}
+.home-page__box {
+	line-height: 1.4;
+}
+.home-page__box .icon {
+	vertical-align: -0.25em;
+	margin-right: 0.3em;
+}
+.home-page__box--extras .icon {
+	vertical-align: -0.2em;
+}
+.about-page__section__title {
+	background: linear-gradient(to right, #000, rgba(0, 0, 0, 0));
+}
+.curate-box .tag-input-dropdown__content {
+	background-color: var(--layout__quaternary-background);
+}
+.curate-box-buttons {
+	margin-top: 6px;
+}
+.curate-page input[type="checkbox"] {
+	width: 1rem;
+	height: 1rem;
+	margin-left: 4px;
+}
+.game-browser__sidebar__divider,
+.game-list-header,
+.game-list-header__scroll-fill,
+.game-list-header-column--icon {
+	background: var(--layout__primary-background);
+}
+.game-browser__center-inner {
+	display: flex;
+	align-items: right;
+}
+.browse-right-sidebar__additional-application:nth-child(2n) {
+	background-color: var(--layout__primary-background);
+}
+.game-list-item {
+	background-color: #12121477;
+}
+.game-list-item:hover {
+	background-color: #87878933;
+}
+.game-list-item--even {
+	background-color: #19191b77;
+}
+.game-list-item--selected {
+	background-color: #87878977;
+}
+.game-list-item--selected:hover {
+	background-color: #878789bb;
+}
+.game-list-item__icon {
+	width: calc(0.8px * var(--height));
+	height: calc(0.8px * var(--height));
+	margin: calc(0.09px * var(--height)) calc(0.2px * var(--height)) 0 calc(0.05px * var(--height));
+}
+.log-page__dropdown-item input[type="checkbox"] {
+	padding-right: 10px;
+}
+.game-browser__sidebar__divider {
+	--divider-width: 4px;
+}
+.game-list-header-column__title {
+	font-size: calc(0.8px * var(--height));
+}
+.game-list-header-column__divider {
+	width: 0px;
+}
+.game-grid-item:hover {
+	background-color: #87878933;
+}
+.game-grid-item--selected {
+	background-color: #87878977;
+}
+.game-grid-item--selected:hover {
+	background-color: #878789bb;
+}
+.ReactVirtualized__Grid__innerScrollContainer {
+	margin: 0px auto;
+}
+.developer-page__buttons {
+	margin: 8px 24px;
+}
+.service-box {
+	margin: 8px 24px 16px;
+}
+.config-page input[type="button"].save-and-restart {
+	height: 22px;
+}
+.config-page input[type="radio"] {
+	vertical-align: -2px;
+	margin-right: 5px;
+}
+.config-page label {
+	padding-left: 0.15em;
+}
+.setting__row__content .simple-selector {
+	margin-right: 0em;
+}
+.setting__row__content--filepath-path .flashpoint-path__input {
+	border: 0px;
+	box-shadow: 0px 0.5px 2px 1px #0008 inset;
+	margin-right: 8px;
+	padding: 0.05em 0em 0em 0.2em;
+}
+.fp-logo {
+	background:
+	  linear-gradient(rgba(0, 0, 0, 0), #303032),
+	  linear-gradient(90deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #ff2400);
+	background-size: var(--zoom) 100%;
+}

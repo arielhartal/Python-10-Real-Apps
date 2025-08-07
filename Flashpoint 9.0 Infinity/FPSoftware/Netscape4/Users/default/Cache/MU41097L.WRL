@@ -1,0 +1,163 @@
+#VRML V2.0 utf8    
+Background{
+  skyColor 1 1 1
+}
+Shape{
+  appearance Appearance{
+    texture ImageTexture{
+       url"leg2side.jpg"
+    }
+    textureTransform TextureTransform{
+      rotation 1.57
+      translation 0 0.4
+    }
+  }
+  geometry IndexedFaceSet{
+    coord Coordinate{
+     point[
+       0 0 -3,
+       0 -0.45 -3,
+       0.12 -0.45 -3,
+       0.12 0 -3,
+       
+     ]
+    }
+  coordIndex[
+       0,1,2,3,-1,
+  ]
+  solid FALSE
+  }
+}
+Shape{
+  appearance Appearance{
+    texture ImageTexture{
+       url"leg2side.jpg"
+    }
+    textureTransform TextureTransform{
+      rotation 1.57
+      translation 0 0.4
+    }
+  }
+  geometry IndexedFaceSet{
+    coord Coordinate{
+     point[
+       0 0 -3,
+       0 -0.45 -3,
+       0.12 -0.45 -3,
+       0.12 0 -3,
+       0 0 -3.1,
+       0 -0.45 -3.1,
+       0.12 -0.45 -3.1,
+       0.12 0 -3.1
+     ]
+    }
+  coordIndex[
+       4,7,6,5,-1,
+  ]
+  solid FALSE
+  }
+}
+Shape{
+  appearance Appearance{
+    texture ImageTexture{
+       url"leg2.jpg"
+    }
+    textureTransform TextureTransform{
+      rotation 1.57
+      translation 0 0.4
+    }
+  }
+  geometry IndexedFaceSet{
+    coord Coordinate{
+     point[
+       0 0 -3,
+       0 -0.45 -3,
+       0.12 -0.45 -3,
+       0.12 0 -3,
+       0 0 -3.1,
+       0 -0.45 -3.1,
+       0.12 -0.45 -3.1,
+       0.12 0 -3.1
+     ]
+    }
+  coordIndex[
+       0,4,5,1,-1,
+  ]
+  solid FALSE
+  }
+}
+Shape{
+  appearance Appearance{
+    texture ImageTexture{
+       url"leg2back.jpg"
+    }
+    textureTransform TextureTransform{
+      rotation 1.57
+      translation 0 0.4
+    }
+  }
+  geometry IndexedFaceSet{
+    coord Coordinate{
+     point[
+       0 0 -3,
+       0 -0.45 -3,
+       0.12 -0.45 -3,
+       0.12 0 -3,
+       0 0 -3.1,
+       0 -0.45 -3.1,
+       0.12 -0.45 -3.1,
+       0.12 0 -3.1
+     ]
+    }
+  coordIndex[
+       3,2,6,7,-1,
+  ]
+  solid FALSE
+  }
+}
+Shape{
+  appearance Appearance{
+    material Material{}
+  }
+  geometry IndexedFaceSet{
+    coord Coordinate{
+     point[
+       0 0 -3,
+       0 -0.45 -3,
+       0.12 -0.45 -3,
+       0.12 0 -3,
+       0 0 -3.1,
+       0 -0.45 -3.1,
+       0.12 -0.45 -3.1,
+       0.12 0 -3.1
+     ]
+    }
+  coordIndex[
+       0,3,7,4,-1,
+  ]
+  solid FALSE
+  }
+}
+Shape{
+  appearance Appearance{
+    material Material{}
+  }
+  geometry IndexedFaceSet{
+    coord Coordinate{
+     point[
+       0 0 -3,
+       0 -0.45 -3,
+       0.12 -0.45 -3,
+       0.12 0 -3,
+       0 0 -3.1,
+       0 -0.45 -3.1,
+       0.12 -0.45 -3.1,
+       0.12 0 -3.1
+     ]
+    }
+  coordIndex[
+       1,5,6,2,-1
+  ]
+  solid FALSE
+  }
+}

@@ -1,0 +1,343 @@
+#VRML V2.0 utf8
+Background{
+ skyColor 0.9 0.4 1 
+}
+DEF Kao
+Transform{
+ translation 0 0 0
+children[
+
+ Inline{
+   url"tatsuki-kao.wrl"
+}
+
+Transform{
+ translation -0.13 -0.26 0
+children[
+ Inline{
+   url"tatsuki-doutai.wrl"
+}
+]
+}
+DEF Mude
+Transform{
+ translation -0.19 -0.28 -0.07
+children[
+ Inline{
+  url"tatsuki-ude.wrl"
+}
+DEF Mhiji
+Transform{
+ translation 0.065 -0.30 0
+children[
+ Inline{
+   url"tatsuki-arm.wrl"
+}
+DEF Hte
+Transform{
+ translation -0.045 -0.27 -0.05
+children[
+ Inline{
+   url"tatsuki-te.wrl"
+}
+]
+}
+]
+}
+]
+}
+DEF Masi
+Transform{
+ translation -0.03 -0.88 -0.075
+children[
+ Inline{
+   url"tatsuki-momo.wrl"
+}
+
+DEF Mhukurahagi
+Transform{
+ translation 0.07 -0.35 0.03 
+children[
+ Inline{
+   url"tatsuki-hukurahagi.wrl"
+}
+
+
+Transform{
+ translation -0.08 -0.273 -0.06
+children[
+ Inline{
+   url"tatsuki-asi.wrl"
+}
+]
+}
+]
+}
+]
+}
+
+
+DEF Hude
+Transform{
+ translation 0.28 -0.28 -0.07
+children[
+ Inline{
+   url"tatsuki-ude.wrl"
+}
+DEF Hhiji
+Transform{
+ translation 0.065 -0.3 0
+children[
+ Inline{
+   url"tatsuki-arm.wrl"
+}
+
+
+Transform{
+ translation -0.02 -0.273 -0.02
+children[
+ Inline{
+   url"tatsuki-te2.wrl"
+}
+]
+}
+]
+}
+]
+}
+
+
+
+DEF Hasi
+Transform{
+ translation 0.127 -0.88 -0.075
+children[
+ Inline{
+   url"tatsuki-momo.wrl"
+ }
+
+DEF Hhukurahagi
+Transform{
+ translation 0.08 -0.35 0.03
+children[
+ Inline{
+   url"tatsuki-hukurahagi.wrl"
+}
+
+Transform{
+ translation -0.07 -0.273 -0.06
+children[
+ Inline{
+   url"tatsuki-asi.wrl"
+}
+]
+}
+]
+}
+]
+}
+
+
+ ]
+ }
+
+
+DEF MyTimer TimeSensor{
+  cycleInterval 8
+    loop TRUE
+    }
+
+
+ DEF KaoInterpolator OrientationInterpolator{
+  key[ 0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1 ]
+    keyValue[
+   1 0 0 0,
+   1 0 0 -0.2,
+   1 0 0 -0.3,
+   1 0 0 -0.34,
+   1 0 0 -0.34,
+   1 0 0 -0.3,
+   1 0 0 0.2,
+   1 0 0 0.3,
+   1 0 0 0,
+  ]
+    }
+
+
+
+ROUTE MyTimer.fraction_changed TO KaoInterpolator.set_fraction
+ROUTE KaoInterpolator.value_changed TO Kao.set_rotation
+
+
+
+
+
+ DEF MudeInterpolator OrientationInterpolator{
+  key[ 0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1 ]
+    keyValue[
+   1 0 0 0,
+   1 0 0 -0.785,
+   1 0 0 -1.57,
+   1 0 0 -2.355,
+   1 0 0 -3.14,
+   1 0 0 -4,
+   1 0 0 -1.5,
+   1 0 0 -0.785,
+   1 0 0 0,
+  ]
+    }
+
+
+
+ROUTE MyTimer.fraction_changed TO MudeInterpolator.set_fraction
+ROUTE MudeInterpolator.value_changed TO Mude.set_rotation
+
+DEF MhijiInterpolator OrientationInterpolator{
+  key[ 0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1 ]
+    keyValue[
+      0 1 0 1.57,
+      0 1 0 1.57,
+      0 1 0 1.57,
+      1 0 0 -1.57,
+      1 0 0 -1.57,
+      1 0 0 -2.3,
+      0 1 0 1.57,
+      0 1 0 1.57,
+      0 1 0 1.57,
+      ]
+    }
+      
+ROUTE MyTimer.fraction_changed TO MhijiInterpolator.set_fraction
+
+ROUTE MhijiInterpolator.value_changed TO Mhiji.set_rotation
+
+ DEF HudeInterpolator OrientationInterpolator{
+  key[ 0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1 ]
+    keyValue[
+   1 0 0 0,
+   1 0 0 -0.785,
+   1 0 0 -1.57,
+   1 0 0 -2.355,
+   1 0 0 -2.355,
+   1 0 0 -2.355,
+   1 0 0 0,
+   1 0 0 0,
+   1 0 0 0,
+  ]
+    }
+
+
+
+ROUTE MyTimer.fraction_changed TO HudeInterpolator.set_fraction
+ROUTE HudeInterpolator.value_changed TO Hude.set_rotation
+
+DEF HhijiInterpolator OrientationInterpolator{
+  key[ 0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1 ]
+    keyValue[
+      0 1 0 0,
+      0 1 0 0,
+      0 1 0 0,
+      0 1 0 0,
+      0 1 0 0,
+      0 1 0 0,
+      1 0 0 -2.4,
+      1 0 0 -2.4,
+      1 0 0 -2.4,
+      ]
+    }
+      
+ROUTE MyTimer.fraction_changed TO HhijiInterpolator.set_fraction
+
+ROUTE HhijiInterpolator.value_changed TO Hhiji.set_rotation
+
+
+ DEF MasiInterpolator OrientationInterpolator{
+  key[ 0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1 ]
+    keyValue[
+  
+   1 0 0 0,
+   1 0 0 0.393,
+   1 0 0 0.785,
+   1 0 0 1.3,
+   1 0 0 1.3,
+   1 0 0 1.3,
+
+   1 0 0 -0.785,
+   1 0 0 -0.785,
+   1 0 0 0,
+  ]
+    }
+
+
+
+ROUTE MyTimer.fraction_changed TO MasiInterpolator.set_fraction
+ROUTE MasiInterpolator.value_changed TO Masi.set_rotation
+
+DEF MhukurahagiInterpolator OrientationInterpolator{
+  key[ 0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1 ]
+    keyValue[
+      1 0 0 0.785,
+      1 0 0 0.785,
+      1 0 0 0.785,
+      1 0 0 0.785,
+      1 0 0 0.785,
+      1 0 0 1.57,
+      1 0 0 0,
+      1 0 0 0,
+      1 0 0 0.785,
+      ]
+    }
+      
+ROUTE MyTimer.fraction_changed TO MhukurahagiInterpolator.set_fraction
+
+ROUTE MhukurahagiInterpolator.value_changed TO Mhukurahagi.set_rotation
+
+
+ DEF HasiInterpolator OrientationInterpolator{
+  key[ 0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1 ]
+    keyValue[
+   1 0 0 0,
+   1 0 0 0.393,
+   1 0 0 0.785,
+   1 0 0 1.3,
+   1 0 0 1.3,
+   1 0 0 1.3,
+
+   1 0 0 -0.785,
+   1 0 0 -0.785,
+   1 0 0 0,
+  ]
+    }
+
+
+
+ROUTE MyTimer.fraction_changed TO HasiInterpolator.set_fraction
+ROUTE HasiInterpolator.value_changed TO Hasi.set_rotation
+
+DEF HhukurahagiInterpolator OrientationInterpolator{
+  key[ 0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1 ]
+    keyValue[
+      1 0 0 0.785,
+      1 0 0 0.785,
+      1 0 0 0.785,
+      1 0 0 0.785,
+      1 0 0 0.785,
+      1 0 0 1.57,
+      1 0 0 0,
+      1 0 0 0,
+      1 0 0 0.785,
+             ]
+    }
+      
+ROUTE MyTimer.fraction_changed TO HhukurahagiInterpolator.set_fraction
+
+ROUTE HhukurahagiInterpolator.value_changed TO Hhukurahagi.set_rotation
+
+
+
+
+
+
+
+
+

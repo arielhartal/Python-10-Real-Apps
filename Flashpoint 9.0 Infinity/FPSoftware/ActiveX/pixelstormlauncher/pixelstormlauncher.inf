@@ -1,0 +1,16 @@
+[Version]
+Signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+pixelstormlauncher.dll=pixelstormlauncher.dll
+
+[pixelstormlauncher.dll]
+file-win32-x86=thiscab
+clsid={B12213CD-4189-415D-A054-7999528459F7}
+RegisterServer=yes
+FileVersion=1,6,8,22
+
+
+
+

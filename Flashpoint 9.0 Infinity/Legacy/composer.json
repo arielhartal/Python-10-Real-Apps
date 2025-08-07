@@ -1,0 +1,11 @@
+{
+    "repositories": [
+        {
+            "url": "https://github.com/emilkm/efxphp.git",
+            "type": "git"
+        }
+    ],
+    "require": {
+        "emilkm/efxphp": "dev-master"
+    }
+}

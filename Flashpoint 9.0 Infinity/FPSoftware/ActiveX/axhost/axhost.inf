@@ -1,0 +1,14 @@
+ Version signature (same for both NT and Win95) -- do not remove
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+axhost.dll=axhost.dll
+
+[axhost.dll]
+file-win32-x86=thiscab
+clsid={87056D28-9730-4A47-B9F9-7E890B62C58A}
+FileVersion=1,0,0,1
+RegisterServer=yes
+

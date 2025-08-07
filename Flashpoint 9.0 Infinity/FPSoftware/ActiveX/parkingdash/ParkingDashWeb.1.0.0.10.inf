@@ -1,0 +1,13 @@
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+ParkingDashWeb.1.0.0.10.dll=ParkingDashWeb.1.0.0.10.dll
+
+[ParkingDashWeb.1.0.0.10.dll]
+file-win32-x86=thiscab
+clsid={F135A813-7152-4532-AC8D-28AC2136DFC7}
+FileVersion=1,0,0,10
+RegisterServer=yes
+

@@ -1,0 +1,48 @@
+component= ADVERTISING
+	version= 4
+	installed_local= default_ad;default5E449320.png
+	installed_local= error_image;error5E449320.png
+	installed_local= exit_image;exit5E449320.png
+	installed_local= library;advertising5E449320.dll
+	installed_local= nag_image;nag5E449320.png
+componentend
+component= CONTROLPANEL
+	version= 3
+	installed_local= controlpanel;hypercosm5E449320.cpl
+	installed_local= fish;fish5E449320.hcvm
+componentend
+component= IMAGELIB
+	version= 4
+	installed_local= library;images5E449320.dll
+componentend
+component= INTERPRETER1
+	version= 14
+	installed_local= license.txt;license5E449320.txt
+	installed_local= run;Hypercosm3D5E449320.exe
+componentend
+component= LEGALINFO
+	version= 4
+	installed_local= legalinfo;legalinfo5E449320.txt
+componentend
+component= MINI_EXE
+	version= 2
+	installed_local= mini_exe;mini_exe5E449321.exe
+	installed_local= mini_exe_inst.dll;mini_exe_inst5E449321.dll
+componentend
+component= NETSCAPEPLUGIN
+	version= 13
+	installed_local= plugin;netscapeplugin5E449321.dll
+componentend
+component= UNINSTALLER
+	version= 2
+	installed_local= uninst_inst.dll;uninst_inst5E449321.dll
+	installed_local= uninstaller;uninstaller5E449321.exe
+componentend
+component= VCDATABASE
+	version= 1
+	installed_local= vcdatabase;vcdatabase5E449321.txt
+componentend
+component= TRIMMED_NURBS
+	version= 1
+	installed_local= library;trimmed_nurbs5E449321.dll
+componentend

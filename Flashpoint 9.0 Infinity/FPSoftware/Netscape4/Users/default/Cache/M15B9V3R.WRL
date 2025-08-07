@@ -1,0 +1,171 @@
+#VRML V2.0 utf8
+Background{
+  skyColor 1 1 1
+}
+Transform{
+ children[
+  DEF Atama Shape{
+ appearance Appearance{
+  texture ImageTexture{
+   url"kaom.jpg"
+  }
+  textureTransform TextureTransform{
+   rotation 1.57
+   translation 0 0.12 
+   }
+
+ }
+geometry IndexedFaceSet{
+ coord Coordinate{
+  point [
+0 0 0,
+0 0 0.23,
+0.18 0 0.23,
+0.18 0 0,
+0 0.25 0,
+0 0.25 0.23,
+0.18 0.25 0.23,
+0.18 0.25 0
+  ]
+ }
+   coordIndex[
+1,2,6,5,-1
+   ]
+solid FALSE
+}
+}
+DEF Atama Shape{
+ appearance Appearance{
+  texture ImageTexture{
+   url"yokogaol.jpg"
+   }
+   textureTransform TextureTransform{
+   rotation 1.57
+   }
+  
+
+ }
+geometry IndexedFaceSet{
+ coord Coordinate{
+  point [
+0 0 0,
+0 0 0.23,
+0.18 0 0.23,
+0.18 0 0,
+0 0.25 0,
+0 0.25 0.23,
+0.18 0.25 0.23,
+0.18 0.25 0
+  ]
+ }
+   coordIndex[
+
+0,1,5,4,-1,
+2,3,7,6,-1,
+
+0,3,2,1,-1
+
+   ]
+solid FALSE
+}
+}
+DEF Atama Shape{
+ appearance Appearance{
+  texture ImageTexture{
+   url"atama.jpg"
+  }
+ textureTransform TextureTransform{
+   rotation 1.57
+   translation 0 0.12 
+   }
+ }
+geometry IndexedFaceSet{
+ coord Coordinate{
+  point [
+0 0 0,
+0 0 0.23,
+0.18 0 0.23,
+0.18 0 0,
+0 0.25 0,
+0 0.25 0.23,
+0.18 0.25 0.23,
+0.18 0.25 0
+  ]
+ }
+   coordIndex[
+
+3,0,4,7,-1,
+
+   ]
+solid FALSE
+}
+}
+
+DEF Atama Shape{
+ appearance Appearance{
+  texture ImageTexture{
+   url"yokogaol.jpg"
+   }
+   textureTransform TextureTransform{
+   rotation 1.57
+   }
+  
+
+ }
+geometry IndexedFaceSet{
+ coord Coordinate{
+  point [
+0 0 0,
+0 0 0.23,
+0.18 0 0.23,
+0.18 0 0,
+0 0.25 0,
+0 0.25 0.23,
+0.18 0.25 0.23,
+0.18 0.25 0
+  ]
+ }
+   coordIndex[
+
+0,1,5,4,-1,
+2,3,7,6,-1,
+
+0,3,2,1,-1
+
+   ]
+solid FALSE
+}
+}
+DEF Atama Shape{
+ appearance Appearance{
+  texture ImageTexture{
+   url"kuro.jpg"
+  }
+ 
+ }
+geometry IndexedFaceSet{
+ coord Coordinate{
+  point [
+0 0 0,
+0 0 0.23,
+0.18 0 0.23,
+0.18 0 0,
+0 0.25 0,
+0 0.25 0.23,
+0.18 0.25 0.23,
+0.18 0.25 0
+  ]
+ }
+   coordIndex[
+
+4,5,6,7,-1,
+
+   ]
+solid FALSE
+}
+}
+
+
+
+ ]
+}

@@ -1,0 +1,12 @@
+[Version]
+Signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+gpcontrol.dll=gpcontrol.dll
+
+[gpcontrol.dll]
+clsid={D77EF652-9A6B-40C8-A4B9-1C0697C6CF41}
+file-win32-x86=thiscab
+FileVersion=1,0,3,18
+RegisterServer=yes

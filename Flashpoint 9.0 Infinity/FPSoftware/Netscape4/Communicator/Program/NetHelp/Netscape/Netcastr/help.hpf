@@ -1,0 +1,44 @@
+; help.hpf
+; Auto-generated NetHelp project file
+
+Window-Name="Communicator Help"
+Window-Size="425,440"
+NetHelp-Version="2"
+<Frame_Group src = "../../NSHIfrm.htm" default_window = "">
+
+<ID_MAP>
+
+net_main_about = "net.htm#net_main_about" : target = "Topic"
+starting_netcaster = "net.htm#starting_netcaster" : target = "Topic"
+the_netcaster_window = "net.htm#the_netcaster_window" : target = "Topic"
+showing_netcaster = "net.htm#showing_netcaster" : target = "Topic"
+buttons_netcaster = "net.htm#buttons_netcaster" : target = "Topic"
+exiting_netcaster = "net.htm#exiting_netcaster" : target = "Topic"
+about_channels = "net.htm#about_channels" : target = "Topic"
+about_channel_finder = "net.htm#about_channel_finder" : target = "Topic"
+castanet_channels = "net.htm#castanet_channels" : target = "Topic"
+launching_channels = "net.htm#launching_channels" : target = "Topic"
+updating_channels = "net.htm#updating_channels" : target = "Topic"
+adding_channels = "net.htm#adding_channels" : target = "Topic"
+deleting_channels = "net.htm#deleting_channels" : target = "Topic"
+setting_default_webtop = "net.htm#setting_default_webtop" : target = "Topic"
+about_webtops = "net.htm#about_webtops" : target = "Topic"
+adding_webtops = "net.htm#adding_webtops" : target = "Topic"
+launching_webtops = "net.htm#launching_webtops" : target = "Topic"
+changing_webtops = "net.htm#changing_webtops" : target = "Topic"
+hiding_webtop = "net.htm#hiding_webtop" : target = "Topic"
+updating_webtop = "net.htm#updating_webtop" : target = "Topic"
+return_desktop = "net.htm#return_desktop" : target = "Topic"
+deleting_webtops = "net.htm#deleting_webtops" : target = "Topic"
+customizing_netcaster = "net.htm#customizing_netcaster" : target = "Topic"
+moving_netcaster = "net.htm#moving_netcaster" : target = "Topic"
+moving_webtops = "net.htm#moving_webtops" : target = "Topic"
+org_channels = "net.htm#org_channels" : target = "Topic"
+enable_download = "net.htm#enable_download" : target = "Topic"
+download_frequency = "net.htm#download_frequency" : target = "Topic"
+download_levels = "net.htm#download_levels" : target = "Topic"
+control_cache = "net.htm#control_cache" : target = "Topic"
+about_offline_browsing = "net.htm#about_offline_browsing" : target = "Topic"
+viewing_offline = "net.htm#viewing_offline" : target = "Topic"
+
+</ID_MAP>

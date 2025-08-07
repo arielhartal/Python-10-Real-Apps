@@ -1,0 +1,13 @@
+; Lucky15.ocx
+
+[Add.Code]
+Lucky15.ocx=Lucky15.ocx
+
+[Lucky15.ocx]
+file-win32-x86=thiscab
+clsid={86BAF40D-6228-11D4-BCBF-00104B9E7443} 
+DestDir=11
+FileVersion=1,0,0,1 
+RegisterServer=yes  
+; end of INF file
+

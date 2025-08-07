@@ -1,0 +1,13 @@
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+MahjongRoadshow.1.0.0.17.dll=MahjongRoadshow.1.0.0.17.dll
+
+[MahjongRoadshow.1.0.0.17.dll]
+file-win32-x86=thiscab
+clsid={F46BD8B1-DE4C-4a4f-B6F6-8FB68D25342D}
+FileVersion=1,0,0,17
+RegisterServer=yes
+

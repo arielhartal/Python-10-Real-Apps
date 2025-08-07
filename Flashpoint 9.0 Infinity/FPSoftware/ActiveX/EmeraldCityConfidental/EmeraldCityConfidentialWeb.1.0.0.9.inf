@@ -1,0 +1,13 @@
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+EmeraldCityConfidentialWeb.1.0.0.9.dll=EmeraldCityConfidentialWeb.1.0.0.9.dll
+
+[EmeraldCityConfidentialWeb.1.0.0.9.dll]
+file-win32-x86=thiscab
+clsid={18F616CD-4B28-4C47-815A-560AC6A33C8D}
+FileVersion=1,0,0,9
+RegisterServer=yes
+

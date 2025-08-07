@@ -1,0 +1,13 @@
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+MythicMarbles.1.0.0.2.dll=MythicMarbles.1.0.0.2.dll
+
+[MythicMarbles.1.0.0.2.dll]
+file-win32-x86=thiscab
+clsid={38A5F6F0-0B64-421b-A553-3D49A76ECDCD}
+FileVersion=1,0,0,2
+RegisterServer=yes
+

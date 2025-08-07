@@ -1,0 +1,27 @@
+[
+    {
+        "name": "silexlabs/amfphp",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/silexlabs/amfphp-2.0.git",
+            "reference": "b5963ef1d1bdd105b2b07f50d4839101d86c76cc"
+        },
+        "time": "2016-01-26T14:48:49+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "files": [
+                "Amfphp/ClassLoader.php"
+            ]
+        },
+        "authors": [
+            {
+                "name": "Ariel Sommeria",
+                "email": "ariel@silexlabs.org"
+            }
+        ],
+        "description": "Simple Remoting for Web Applications"
+    }
+]

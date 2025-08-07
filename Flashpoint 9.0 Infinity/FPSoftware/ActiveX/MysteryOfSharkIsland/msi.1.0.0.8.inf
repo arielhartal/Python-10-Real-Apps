@@ -1,0 +1,13 @@
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+msi.1.0.0.8.dll=msi.1.0.0.8.dll
+
+[msi.1.0.0.8.dll]
+file-win32-x86=thiscab
+clsid={226ACC34-3194-40e2-9AE8-834FCFE9E80D}
+FileVersion=1,0,0,8
+RegisterServer=yes
+

@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+NEWLINE
+NEWLINE
+[HKEY_CURRENT_USER\Software\Unity\WebPlayer]
+"un.Directory"="C:\\"
+"Directory"="UDIRDS"
+"StatsDone"="yes"
+"UnityWebPlayerReleaseChannel"="Stable"
+"UnityWebPlayerDevelopment"="no"

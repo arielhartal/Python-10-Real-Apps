@@ -1,0 +1,23 @@
+#VRML V2.0 utf8
+Background{
+ skyColor 1 1 1
+}
+Transform{
+ scale 0.65 0.65 0.65
+ children[
+Transform{
+ children[
+  Inline{
+   url"muatama.wrl"
+  }
+ ]
+}
+]
+}
+Transform{
+ children[
+  Inline{
+   url"mubodyall.wrl"
+  }
+ ]
+}

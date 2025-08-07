@@ -1,0 +1,242 @@
+#VRML V2.0 utf8
+Background{
+skyColor 1 1 1 
+}
+
+
+DEF doutai 
+Transform{
+translation 0 0 0 
+children[
+
+Inline{
+url"1,30part2.wrl"
+}
+
+DEF atama 
+Transform{
+translation 0 0 0 
+children[
+Inline{
+url"1,30part1.wrl"
+}
+]
+}
+
+DEF migiude
+Transform{
+translation 0.2 0 0 
+children[
+Inline{
+url"1,30part3.wrl"
+}
+]
+}
+
+
+DEF hidariude 
+Transform{
+translation -0.2 0 0 
+children[
+Inline{
+url"1,30part4.wrl"
+}
+]
+}
+
+DEF migihutomomo 
+Transform{
+translation 0.01 -0.6 0 
+children[
+Inline{
+url"1,30part5.wrl"
+}
+
+DEF migisune 
+Transform{
+translation 0 -0.4 0 
+children[
+Inline{
+url"1,30part7.wrl"
+}
+
+DEF migiashikubi 
+Transform{
+translation 0.01 -0.4 0 
+children[
+Inline{
+url"1,30part9.wrl"
+}
+]
+}
+
+
+]
+}
+
+
+]
+}
+
+
+DEF hidarihutomomo 
+Transform{
+translation -0.01 -0.6 0 
+children[
+Inline{
+url"1,30part6.wrl"
+}
+
+DEF hidarisune 
+Transform{
+translation 0 -0.4 0 
+children[
+Inline{
+url"1,30part8.wrl"
+}
+
+DEF hidariashikubi
+Transform{
+translation -0.01 -0.4 0 
+children[
+Inline{
+url"1,30part10.wrl"
+}
+]
+}
+
+
+]
+}
+
+
+]
+}
+
+
+]
+}
+
+DEF hidarihutomomoInterpolator OrientationInterpolator{
+key[0,0.125,0.25,0.375,0.5,0.625,0.75,0.875,1]
+keyValue[
+1 0 0 1.57, 
+1 0 0 0.785,
+1 0 0 0,
+1 0 0 -0.785,
+1 0 0 -1.57,
+1 0 0 -0.785,
+1 0 0 0,
+1 0 0 0.785,
+1 0 0 1.57,
+]
+}
+
+DEF migihutomomoInterpolator OrientationInterpolator{
+key[0,0.125,0.25,0.375,0.5,0.625,0.75,0.875,1]
+keyValue[
+1 0 0 -1.57, 
+1 0 0 -0.785,
+1 0 0 0,
+1 0 0 0.785,
+1 0 0 1.57,
+1 0 0 0.785,
+1 0 0 0,
+1 0 0 -0.785,
+1 0 0 -1.57,
+]
+}
+
+
+DEF MyTimer TimeSensor{
+cycleInterval 8
+loop TRUE
+}
+ROUTE MyTimer.fraction_changed TO hidarihutomomoInterpolator.set_fraction
+ROUTE hidarihutomomoInterpolator.value_changed TO hidarihutomomo.set_rotation
+
+ROUTE MyTimer.fraction_changed TO migihutomomoInterpolator.set_fraction
+ROUTE migihutomomoInterpolator.value_changed TO migihutomomo.set_rotation
+
+
+
+DEF migiudeInterpolator OrientationInterpolator{
+key[0,0.125,0.25,0.375,0.5,0.625,0.75,0.875,1]
+keyValue[
+1 0 0 1.57, 
+1 0 0 0.785,
+1 0 0 0,
+1 0 0 -0.785,
+1 0 0 -1.57,
+1 0 0 -0.785,
+1 0 0 0,
+1 0 0 0.785,
+1 0 0 1.57,
+]
+}
+
+DEF hidariudeInterpolator OrientationInterpolator{
+key[0,0.125,0.25,0.375,0.5,0.625,0.75,0.875,1]
+keyValue[
+1 0 0 -1.57, 
+1 0 0 -0.785,
+1 0 0 0,
+1 0 0 0.785,
+1 0 0 1.57,
+1 0 0 0.785,
+1 0 0 0,
+1 0 0 -0.785,
+1 0 0 -1.57,
+]
+}
+
+
+DEF MyTimer TimeSensor{
+cycleInterval 8
+loop TRUE
+}
+
+ROUTE MyTimer.fraction_changed TO migiudeInterpolator.set_fraction
+ROUTE migiudeInterpolator.value_changed TO migiude.set_rotation
+
+
+ROUTE MyTimer.fraction_changed TO hidariudeInterpolator.set_fraction
+ROUTE hidariudeInterpolator.value_changed TO hidariude.set_rotation
+
+
+DEF hidarisuneInterpolator OrientationInterpolator{
+key[0,0.125,0.25,0.375,0.5,0.625,0.75,0.875,1]
+keyValue[
+1 0 0 0.785, 
+1 0 0 1.57,
+1 0 0 2.355,
+1 0 0 2.355,
+1 0 0 0,
+1 0 0 0,
+1 0 0 0,
+1 0 0 0,
+1 0 0 0.785,
+]
+}
+
+DEF migisuneInterpolator OrientationInterpolator{
+key[0,0.125,0.25,0.375,0.5,0.625,0.75,0.875,1]
+keyValue[
+1 0 0 0,
+1 0 0 0,
+1 0 0 0,
+1 0 0 0,
+1 0 0 0.785,
+1 0 0 0.785, 
+1 0 0 1.57,
+1 0 0 2.355,
+1 0 0 2.355,
+
+]
+}
+
+
+ROUTE MyTimer.fraction_changed TO hidarisuneInterpolator.set_fraction
+ROUTE MyTimer.fraction_changed TO migisuneInterpolator.set_fraction
+ROUTE hidarisuneInterpolator.value_changed TO hidarisune.set_rotation
+ROUTE migisuneInterpolator.value_changed TO migisune.set_rotation

@@ -1,0 +1,40 @@
+; FHDLButton.ocx
+; A simple ActiveX button
+
+[Add.Code]
+FHDLButton.ocx=FHDLButton.ocx
+mfc42.dll=mfc42.dll
+msvcrt.dll=msvcrt.dll
+olepro32.dll=olepro32.dll
+
+[FHDLButton.ocx]
+file-win32-x86=thiscab
+clsid={F9F0DA85-3A37-11D3-A057-00104B5FBF5B} 
+DestDir=11
+FileVersion=1,0,0,1 
+RegisterServer=yes  
+; end of INF file
+
+; dependent DLLs
+[msvcrt.dll]
+; This is an example of conditional hook. The hook only gets processed
+; if msvcrt.dll of the specified version is absent on client machine.
+FileVersion=6,0,8168,0
+hook=mfc42installer
+
+[mfc42.dll]
+FileVersion=6,0,8168,0
+hook=mfc42installer
+
+[olepro32.dll]
+FileVersion=5,0,4261,0
+hook=mfc42installer
+
+[mfc42installer]
+file-win32-x86=<LINK TYPE="GENERIC" VALUE="http://activex.microsoft.com/controls/vc/mfc42.cab">http://activex.microsoft.com/controls/vc/mfc42.cab</LINK>
+; If dependent DLLs are packaged directly into the above cabinet file
+; along with an .inf file, specify that .inf file to run as follows:
+;InfFile=mfc42.inf
+; The mfc42.cab file actually contains a self extracting executable.
+; In this case we specify a run= command.
+run=%EXTRACT_DIR%\mfc42.exe

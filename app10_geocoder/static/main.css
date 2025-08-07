@@ -1,0 +1,37 @@
+html, body{
+  height: 100%;
+  margin: 0;
+  background-color: #006666;
+}
+
+.container{
+  text-align: center;
+  margin: 0 auto;
+}
+.container h1{
+  margin-top: 100px;
+  color: #DDCCEE;
+}
+
+
+.container h2{
+  margin-top: 2px;
+  color: white;
+}
+
+.container button {
+  width: 70px;
+  height: 30px;
+  background-color: steelblue;
+  margin: 3px;
+}
+
+
+.block {
+  margin-left: 450px;
+}
+
+.down{
+  align-self:center;
+  margin-top: 20px;
+}

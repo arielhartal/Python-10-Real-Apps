@@ -1,0 +1,70 @@
+#VRML V2.0 utf8
+
+Viewpoint {}
+NavigationInfo {
+	type "EXAMINE"
+}
+
+# テキスト
+Transform {
+	translation 0 1 0
+	children [
+		Shape {
+			appearance DEF Ap Appearance {
+				material Material {
+					emissiveColor 1 1 0
+				}
+			}
+			geometry Text {
+				string "English"
+				fontStyle DEF FS FontStyle {
+					justify "MIDDLE"
+				}
+			}
+		}
+		DEF Bx Shape {
+			appearance Appearance {
+				material Material {
+					transparency 1
+				}
+			}
+			geometry Box {
+				size 3.5 1 0.1
+			}
+		}
+		DEF Eng-ThS TouchSensor {}
+	]
+}
+Transform {
+	translation 0 -1 0
+	children [
+		Shape {
+			appearance USE Ap
+			geometry Text {
+				string "Japanese"
+				fontStyle USE FS
+			}
+		}
+		USE Bx
+		DEF Jpn-ThS TouchSensor {}
+	]
+}
+
+# スクリプト
+DEF Sc Script {
+	eventIn SFBool english
+	eventIn SFBool japanese
+	field SFString engMessage "indicated a message at the status bar of a Web Browser."
+	field SFString jpnMessage "Webブラウザーのステータスバーにメッセージを表示してみました。"
+	url "javascript:
+		function english () {
+			Browser.setDescription(engMessage);
+		}
+		function japanese () {
+			Browser.setDescription(jpnMessage);
+		}
+	"
+}
+
+ROUTE Eng-ThS.isOver TO Sc.english
+ROUTE Jpn-ThS.isOver TO Sc.japanese

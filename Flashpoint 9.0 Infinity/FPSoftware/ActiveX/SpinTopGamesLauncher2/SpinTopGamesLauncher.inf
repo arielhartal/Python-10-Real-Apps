@@ -1,0 +1,12 @@
+[Version]
+Signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+SpinTopGamesLauncher.dll=SpinTopGamesLauncher.dll
+
+[SpinTopGamesLauncher.dll]
+clsid={7CCAD6DD-DD0B-440B-91FF-7670F5AADC21}
+file-win32-x86=thiscab
+FileVersion=1,0,0,1
+RegisterServer=yes

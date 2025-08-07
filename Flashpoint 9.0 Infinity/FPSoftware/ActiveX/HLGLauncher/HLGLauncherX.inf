@@ -1,0 +1,8 @@
+[Add.Code]
+HLGLauncherX.dll=HLGLauncherX.dll
+
+[HLGLauncherX.dll]
+clsid={B0FB831D-17F6-4CBD-9B5D-3305881D362E}
+file-win32-x86=thiscab
+FileVersion=1,0,0,348
+RegisterServer=yes

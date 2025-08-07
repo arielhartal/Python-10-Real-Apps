@@ -1,0 +1,13 @@
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+tastyplanet.1.0.0.4.dll=tastyplanet.1.0.0.4.dll
+
+[tastyplanet.1.0.0.4.dll]
+file-win32-x86=thiscab
+clsid={1CDFA4E8-3396-439d-8C9D-AD0E32DE94B6}
+FileVersion=1,0,0,4
+RegisterServer=yes
+

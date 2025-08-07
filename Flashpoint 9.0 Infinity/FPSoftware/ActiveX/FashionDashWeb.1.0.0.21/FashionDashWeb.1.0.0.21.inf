@@ -1,0 +1,13 @@
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+FashionDashWeb.1.0.0.21.dll=FashionDashWeb.1.0.0.21.dll
+
+[FashionDashWeb.1.0.0.21.dll]
+file-win32-x86=thiscab
+clsid={049A470D-F818-4E34-B14D-E4E237DADCF8}
+FileVersion=1,0,0,21
+RegisterServer=yes
+

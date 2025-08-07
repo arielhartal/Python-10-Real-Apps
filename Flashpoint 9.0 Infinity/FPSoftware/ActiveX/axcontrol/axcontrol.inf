@@ -1,0 +1,12 @@
+[Version]
+Signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+axcontrol.dll=axcontrol.dll
+
+[axcontrol.dll]
+file-win32-x86=thiscab
+clsid={CA47E69B-B484-44C1-8E29-19B6B2694810}
+RegisterServer=yes
+FileVersion=1,0,0,8

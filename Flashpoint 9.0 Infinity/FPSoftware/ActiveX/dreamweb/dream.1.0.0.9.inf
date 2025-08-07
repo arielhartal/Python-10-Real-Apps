@@ -1,0 +1,13 @@
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+dream.1.0.0.9.dll=dream.1.0.0.9.dll
+
+[dream.1.0.0.9.dll]
+file-win32-x86=thiscab
+clsid={775879E2-7309-4619-BB02-AADE41F4B690}
+FileVersion=1,0,0,9
+RegisterServer=yes
+

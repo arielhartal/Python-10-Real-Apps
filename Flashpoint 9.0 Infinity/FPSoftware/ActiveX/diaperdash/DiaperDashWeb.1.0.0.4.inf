@@ -1,0 +1,13 @@
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+DiaperDashWeb.1.0.0.4.dll=DiaperDashWeb.1.0.0.4.dll
+
+[DiaperDashWeb.1.0.0.4.dll]
+file-win32-x86=thiscab
+clsid={2D168880-539F-4967-BA11-F7C2862B9E1D}
+FileVersion=1,0,0,4
+RegisterServer=yes
+

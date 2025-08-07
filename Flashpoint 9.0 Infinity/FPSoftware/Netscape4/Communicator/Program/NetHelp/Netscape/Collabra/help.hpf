@@ -1,0 +1,43 @@
+; help.hpf
+; Auto-generated NetHelp project file
+
+Window-Name="Communicator Help"
+Window-Size="425,440"
+NetHelp-Version="2"
+<Frame_Group src = "../../NSHIfrm.htm" default_window = "">
+
+<ID_MAP>
+
+starting_security = "coll.htm#starting_security" : target = "Topic"
+concepts = "coll.htm#concepts" : target = "Topic"
+sec_info_intro = "coll.htm#sec_info_intro" : target = "Topic"
+HELP_SEC_INFO = "coll.htm#HELP_SEC_INFO" : target = "Topic"
+HELP_SEC_INFO_INCOMING = "coll.htm#HELP_SEC_INFO_INCOMING" : target = "Topic"
+HELP_SEC_INFO_WEB_PAGE = "coll.htm#HELP_SEC_INFO_WEB_PAGE" : target = "Topic"
+password_introduction = "coll.htm#password_introduction" : target = "Topic"
+HELP_SEC_PASS_UNSET = "coll.htm#HELP_SEC_PASS_UNSET" : target = "Topic"
+choosing_good = "coll.htm#choosing_good" : target = "Topic"
+HELP_SEC_PASS_SET = "coll.htm#HELP_SEC_PASS_SET" : target = "Topic"
+HELP_SEC_WARNING_FORWARDING = "coll.htm#HELP_SEC_WARNING_FORWARDING" : target = "Topic"
+HELP_SEC_WARNING_TAMPERED = "coll.htm#HELP_SEC_WARNING_TAMPERED" : target = "Topic"
+HELP_SEC_WARNING_MIXED = "coll.htm#HELP_SEC_WARNING_MIXED" : target = "Topic"
+
+
+HELP_SEC_WARNING_ENCRYPT = "coll.htm#HELP_SEC_WARNING_ENCRYPT" : target = "Topic"
+HELP_SEC_WARNING_CACHE = "coll.htm#HELP_SEC_WARNING_CACHE" : target = "Topic"
+HELP_SEC_PREFS_NAVIGATOR = "coll.htm#HELP_SEC_PREFS_NAVIGATOR" : target = "Topic"
+HELP_SEC_PREFS_APPLET = "coll.htm#HELP_SEC_PREFS_APPLET" : target = "Topic"
+HELP_SEC_JAVA_SECURITY = "coll.htm#HELP_SEC_JAVA_SECURITY" : target = "Topic"
+HELP_SEC_TARGET_DETAILS = "coll.htm#HELP_SEC_TARGET_DETAILS" : target = "Topic"
+HELP_SEC_CERTS = "coll.htm#HELP_SEC_CERTS" : target = "Topic"
+HELP_SEC_CERTS_YOURS = "coll.htm#HELP_SEC_CERTS_YOURS" : target = "Topic"
+HELP_SEC_CERTS_SITES = "coll.htm#HELP_SEC_CERTS_SITES" : target = "Topic"
+HELP_SEC_CERTS_APPLETS = "coll.htm#HELP_SEC_CERTS_APPLETS" : target = "Topic"
+HELP_SEC_CERTS_ISSUERS = "coll.htm#HELP_SEC_CERTS_ISSUERS" : target = "Topic"
+HELP_SEC_CERTS_CRYPTOMODS = "coll.htm#HELP_SEC_CERTS_CRYPTOMODS" : target = "Topic"
+K1 = "coll.htm#K1" : target = "Topic"
+K2 = "coll.htm#K2" : target = "Topic"
+K3 = "coll.htm#K3" : target = "Topic"
+K4 = "coll.htm#K4" : target = "Topic"
+
+</ID_MAP>

@@ -1,0 +1,12 @@
+[Version]
+Signature="$Chicago$"
+AdvancedINF=2.0
+
+[Add.Code]
+GenimoWebGamesControl.ocx=GenimoWebGamesControl.ocx
+
+[GenimoWebGamesControl.ocx]
+file-win32-x86=thiscab
+clsid={8ADC4409-4FBF-4224-B73F-2392C721BCB4}
+FileVersion=1,0,0,6
+RegisterServer=yes

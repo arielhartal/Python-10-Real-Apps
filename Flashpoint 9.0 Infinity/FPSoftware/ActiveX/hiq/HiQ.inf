@@ -1,0 +1,14 @@
+; HiQ.ocx
+; The Peg-Board Game
+
+[Add.Code]
+HiQ.ocx=HiQ.ocx
+
+[HiQ.ocx]
+file-win32-x86=thiscab
+clsid={BAA9E763-AD70-4C18-A56B-E444007B7912} 
+DestDir=11
+FileVersion=1,0,0,1 
+RegisterServer=yes  
+; end of INF file
+

@@ -1,0 +1,62 @@
+#VRML V2.0 utf8
+Background{
+  skyColor 0.9 0.9 1
+}
+Viewpoint{
+  position -.1 1.5 8.2
+  orientation 1 0 0 -0.05
+}
+Transform{
+  translation 0 -0.5 0
+  children[
+    Inline{
+      url "load.wrl"
+    }
+  ]
+}
+Transform{
+  translation -3 0.6 1
+  scale 1.1 1.1 1.1
+  children[
+    Inline{
+      url "yoshiki\1,30total.wrl"
+    }
+  ]
+}
+Transform{
+  translation -1.5 0 0.5
+  scale 1 1 1
+  children[
+    Inline{
+      url "hitoshi\2.6.hontai.hentai.wrl"
+    }
+  ]
+}
+Transform{
+  translation 0 1.5 0
+  scale 1.2 1.2 1.2
+  children[
+    Inline{
+      url "tatsuki\robot.wrl"
+    }
+  ]
+}
+Transform{
+  translation 1.5 -.85 0.5
+  scale 1.1 1.1 1.1
+  children[
+    Inline{
+      url "meka/mekaru.wrl"
+    }
+  ]
+}
+Transform{
+  translation 6 1 1
+  rotation 0 1 0 1.57
+  scale 1 1 1
+  children[
+    Inline{
+      url "jissa\joint.wrl"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+[Version]
+Signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+zylomgamesplayer.dll=zylomgamesplayer.dll
+
+[zylomgamesplayer.dll]
+file-win32-x86=thiscab	
+clsid={BFF1950D-B1B4-4ae8-B842-B2CCF06D9A1B}
+RegisterServer=yes
+FileVersion=2,0,0,1

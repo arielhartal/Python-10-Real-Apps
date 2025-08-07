@@ -1,0 +1,68 @@
+CACHE MANIFEST
+# 2015-10-14:v2
+
+# Explicitly cached 'master entries'.
+CACHE:
+assets/1280x800/gui.png
+assets/1280x800/congrats/congrats.png
+assets/1280x800/congrats/sky.jpg
+assets/1280x800/congrats/stage.png
+assets/1280x800/digits/digits-level.png
+assets/1280x800/digits/gold-digits.png
+assets/1280x800/digits/white-digits.png
+assets/1280x800/levels/levels-back.jpg
+assets/1280x800/portada/portada-back.jpg
+assets/1280x800/portada/portada-guys.png
+assets/1280x800/portada/portada-logo.png
+assets/1280x800/promo/promo-back.jpg
+assets/1280x800/promo/promo-hand.png
+assets/1280x800/promo/promo-slide-1.jpg
+assets/1280x800/promo/promo-slide-2.jpg
+assets/1280x800/promo/promo-slide-3.jpg
+assets/1280x800/promo/promo-slide-4.jpg
+assets/1280x800/results/day/stage-day.png
+assets/1280x800/results/day/tribune-day.jpg
+assets/1280x800/results/day/door-day.png
+assets/1280x800/results/night/stage-night.png
+assets/1280x800/results/night/tribune-night.jpg
+assets/1280x800/results/night/door-night.png
+# game
+assets/game/particles.png
+assets/game/splash.png
+assets/game/supersplash.png
+assets/game/tricks-lq.png
+assets/game/tricks-hq.png
+assets/game/waterline.png
+# elements
+assets/game/elements/sprinkler/sprinkler.png
+# world day
+assets/game/world/day/castle-day-l.jpg
+assets/game/world/day/castle-day-r.jpg
+assets/game/world/day/castle-day.jpg
+assets/game/world/day/castle-door-day.png
+assets/game/world/day/stage-day-l.png
+assets/game/world/day/stage-day-r.png
+assets/game/world/day/tribune-day.png
+# world night
+assets/game/world/night/castle-night-l.jpg
+assets/game/world/night/castle-night-r.jpg
+assets/game/world/night/castle-night.jpg
+assets/game/world/night/castle-door-night.png
+assets/game/world/night/stage-night-l.png
+assets/game/world/night/stage-night-r.png
+assets/game/world/night/tribune-night.png
+# trainer
+assets/game/world/trainer.png
+assets/game/world/trainer-fetch.png
+# others
+assets/loading.png
+assets/orientation.png
+assets/orientation2.png
+assets/ui-localization.png
+assets/water-drop-pattern.jpg
+
+
+
+# Resources that require the user to be online.
+NETWORK:
+*

@@ -1,0 +1,13 @@
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+FitnessDashWeb.1.0.0.11.dll=FitnessDashWeb.1.0.0.11.dll
+
+[FitnessDashWeb.1.0.0.11.dll]
+file-win32-x86=thiscab
+clsid={26E6B759-DEEB-42A1-A21C-78CD29098411}
+FileVersion=1,0,0,11
+RegisterServer=yes
+
